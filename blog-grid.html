@@ -1,563 +1,1006 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Blog :: Julie – Minimal Fashion Bootstrap 5 Template</title>
-
-    <!--== Favicon ==-->
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
-
-    <!--== Google Fonts ==-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,500i,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,600,700" rel="stylesheet">
-
-    <!--== Bootstrap CSS ==-->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <!--== Headroom CSS ==-->
-    <link href="assets/css/headroom.css" rel="stylesheet" />
-    <!--== Animate CSS ==-->
-    <link href="assets/css/animate.css" rel="stylesheet" />
-    <!--== Ionicons CSS ==-->
-    <link href="assets/css/ionicons.css" rel="stylesheet" />
-    <!--== Material Icon CSS ==-->
-    <link href="assets/css/material-design-iconic-font.css" rel="stylesheet" />
-    <!--== Elegant Icon CSS ==-->
-    <link href="assets/css/elegant-icons.css" rel="stylesheet" />
-    <!--== Font Awesome Icon CSS ==-->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <!--== Swiper CSS ==-->
-    <link href="assets/css/swiper.min.css" rel="stylesheet" />
-    <!--== Fancybox Min CSS ==-->
-    <link href="assets/css/fancybox.min.css" rel="stylesheet" />
-    <!--== Slicknav Min CSS ==-->
-    <link href="assets/css/slicknav.css" rel="stylesheet" />
-
-    <!--== Main Style CSS ==-->
-    <link href="assets/css/style.css" rel="stylesheet" />
-
-    <!--[if lt IE 9]>
-    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-
-<!--wrapper start-->
-<div class="wrapper">
-
-  <!--== Start Preloader Content ==-->
-  <div class="preloader-wrap">
-    <div class="preloader">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="author" content="mironcoder" />
+  <meta name="email" content="mironcoder@gmail.com" />
+  <meta name="profile" content="https://themeforest.net/user/mironcoder" />
+  <meta name="template" content="Organe" />
+  <meta name="title" content="Organe - Organic Food HTML Template" />
+  <meta name="keywords" content="organe, organic, food, shop, ecommerce, store, html, agriculture, vegetable, organic food, organic product, organic farm, organic life, organic shop, food store" />
+  <title>Organe - Blog Grid</title>
+  <link rel="icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="static/css/flaticon.css" />
+  <link rel="stylesheet" href="static/css/icofont.min.css" />
+  <link rel="stylesheet" href="static/css/nice-select.min.css" />
+  <link rel="stylesheet" href="static/css/jquery-ui.min.css" />
+  <link rel="stylesheet" href="static/css/venobox.min.css" />
+  <link rel="stylesheet" href="static/css/slick.min.css" />
+  <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="static/css/main.css" />
+  <link rel="stylesheet" href="static/css/blog-grid.css" />
+ </head>
+ <body>
+  <section class="header-top">
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12 col-lg-5">
+      <div class="header-top-welcome">
+       <p>Welcome to Ecomart in Your Dream Online Store!</p>
       </div>
+     </div>
+     <div class="col-md-5 col-lg-3">
+      <div class="header-top-select">
+       <div class="header-select">
+        <i class="icofont-world"></i>
+        <select class="select"><option value="english" selected="">english</option><option value="bangali">bangali</option><option value="arabic">arabic</option></select>
+       </div>
+       <div class="header-select">
+        <i class="icofont-money"></i>
+        <select class="select"><option value="english" selected="">doller</option><option value="bangali">pound</option><option value="arabic">taka</option></select>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-7 col-lg-4">
+      <ul class="header-top-list">
+       <li><a href="offer.html">offers</a></li>
+       <li><a href="faq.html">need help</a></li>
+       <li><a href="contact.html">contact us</a></li>
+      </ul>
+     </div>
     </div>
-  </div>
-  <!--== End Preloader Content ==-->
-
-  <!--== Start Header Wrapper ==-->
-  <header class="header-area header-default sticky-header">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-6 col-sm-4 col-lg-3">
-          <div class="header-logo-area">
-            <a href="index.html">
-              <img class="logo-main" src="assets/img/logo.png" alt="Logo" />
-              <img class="logo d-none" src="assets/img/logo-light.png" alt="Logo" />
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-4 col-lg-7 d-none d-lg-block">
-          <div class="header-navigation-area">
-            <ul class="main-menu nav position-relative">
-              <li class="has-submenu"><a href="#/">Home</a>
-                <ul class="submenu-nav">
-                  <li><a href="index.html">Home Demo 1</a></li>
-                  <li><a href="index-two.html">Home Demo 2</a></li>
-                </ul>
-              </li>
-              <li class="has-submenu full-width"><a href="#/">Shop</a>
-                <ul class="submenu-nav submenu-nav-mega">
-                  <li class="mega-menu-item"><a href="#/" class="mega-title">Shop Pages</a>
-                    <ul>
-                      <li><a href="shop-3-grid.html">Shop 3 Column</a></li>
-                      <li><a href="shop-4-grid.html">Shop 4 Column</a></li>
-                      <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
-                      <li><a href="shop.html">Shop Right Sidebar</a></li>
-                      <li><a href="shop-list.html">Shop Listing View</a></li>
-                      <li><a href="shop-list-left-sidebar.html">Shop List left Sidebar</a></li>
-                      <li><a href="shop-list-right-sidebar.html">Shop List Right Sidebar</a></li>
-                    </ul>
-                  </li>
-                  <li class="mega-menu-item"><a href="#/" class="mega-title">WOMEN</a>
-                    <ul>
-                      <li><a href="single-product-name-1.html">Bags &amp; Purses</a></li>
-                      <li><a href="single-product-name-1.html">Beauty</a></li>
-                      <li><a href="single-product-name-1.html">Coats &amp; Jackets</a></li>
-                      <li><a href="single-product-name-1.html">Curve &amp; Plus Size</a></li>
-                      <li><a href="single-product-name-1.html">Denim</a></li>
-                    </ul>
-                  </li>
-                  <li class="mega-menu-item"><a href="#/" class="mega-title">MEN</a>
-                    <ul>
-                      <li><a href="single-product-name-1.html">Bags</a></li>
-                      <li><a href="single-product-name-1.html">Blazers</a></li>
-                      <li><a href="single-product-name-1.html">Caps &amp; Hats</a></li>
-                      <li><a href="single-product-name-1.html">Gifts</a></li>
-                      <li><a href="single-product-name-1.html">Grooming</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="has-submenu"><a href="#/">Products</a>
-                <ul class="submenu-nav">
-                  <li><a href="single-product-simple.html">Simple Product</a></li>
-                  <li><a href="single-product.html">Variable Product</a></li>
-                  <li><a href="single-product-affiliate.html">Affiliate Link product</a></li>
-                  <li><a href="single-product-soldout.html">Soldout Product</a></li>
-                  <li><a href="single-product-countdown.html">Countdown Product</a></li>
-                </ul>
-              </li>
-              <li class="has-submenu"><a href="#/">Blog</a>
-                <ul class="submenu-nav">
-                  <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                  <li><a href="blog.html">Blog Right Sidebar</a></li>
-                  <li><a href="blog-grid.html">Blog Grid Layout</a></li>
-                  <li><a href="single-blog.html">Single Blog Left Sidebar</a></li>
-                  <li><a href="single-blog-right-sidebar.html">Single Blog Right Sidebar</a></li>
-                </ul>
-              </li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="about-us.html">About</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-7 col-lg-2 d-none d-sm-block text-end">
-          <div class="header-action-area">
-            <ul class="header-action">
-              <li class="search-item">
-                <a class="action-item" href="page-search.html">
-                  <i class="zmdi zmdi-search icon"></i>
-                </a>
-              </li>
-              <li class="currency-menu">
-                <a class="action-item" href="#/"><i class="zmdi zmdi-lock-outline icon"></i></a>
-                <ul class="currency-dropdown">
-                  <li class="currency">
-                    <a href="#/"><span class="current-currency">USD</span></a>
-                    <ul>
-                      <li class="active"><a href="#/">USD - US Dollar</a></li>
-                      <li class="#/"><a href="#/">EUR - Euro</a></li>
-                      <li class="#/"><a href="#/">GBP - British Pound</a></li>
-                      <li class="#/"><a href="#/">INR - Indian Rupee</a></li>
-                      <li class="#/"><a href="#/">BDT - Bangladesh Taka</a></li>
-                      <li class="#/"><a href="#/">JPY - Japan Yen</a></li>
-                      <li class="#/"><a href="#/">CAD - Canada Dollar</a></li>
-                      <li class="#/"><a href="#/">AUD - Australian Dollar</a></li>
-                    </ul>
-                  </li>
-                  <li class="account">
-                    <a href="#/"><span class="current-account">My account</span></a>
-                    <ul>
-                      <li><a href="login.html">Login</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="mini-cart">
-                <a class="action-item" href="#/">
-                  <i class="zmdi zmdi-shopping-cart-plus icon"></i>
-                  <span class="cart-quantity">2</span>
-                </a>
-                <div class="mini-cart-dropdown">
-                  <div class="cart-item">
-                    <div class="thumb">
-                      <img class="w-100" src="assets/img/shop/cart/1.jpg" alt="Image-HasTech">
-                    </div>
-                    <div class="content">
-                      <h5 class="title"><a href="#/">Literature Classical - s</a></h5>
-                      <span class="product-quantity">1 ×</span>
-                      <span class="product-price">$79.00</span>
-                      <a class="cart-trash" href="javascript:void(0);"><i class="fa fa-trash"></i></a>
-                    </div>
-                  </div>
-                  <div class="cart-item">
-                    <div class="thumb">
-                      <img class="w-100" src="assets/img/shop/cart/2.jpg" alt="Image-HasTech">
-                    </div>
-                    <div class="content">
-                      <h5 class="title"><a href="#/">Fit Wool Suit - m / gold</a></h5>
-                      <span class="product-quantity">1 ×</span>
-                      <span class="product-price">$80.00</span>
-                      <a class="cart-trash" href="javascript:void(0);"><i class="fa fa-trash"></i></a>
-                    </div>
-                  </div>
-                  <div class="cart-total-money">
-                    <h5>Total: <span class="money">$159.00</span></h5>
-                  </div>
-                  <div class="cart-btn">
-                    <a href="cart.html">View Cart</a>
-                    <a href="checkout.html">Checkout</a>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-6 col-sm-1 d-block d-lg-none text-end">
-          <button class="btn-menu" type="button"><i class="zmdi zmdi-menu"></i></button>
-        </div>
-      </div>
+   </div>
+  </section>
+  <section class="header-part">
+   <div class="container-fluid">
+    <div class="header-content-group">
+     <div class="header-widget-group left">
+      <button class="header-widget header-user" href="#" title="My Account"><img src="static/picture/user.png" alt="user" /></button>
+      <a class="header-logo" href="index.html"><img src="static/picture/logo.png" alt="logo" /></a>
+      <button class="header-widget header-src" title="Search Bar"><i class="icofont-ui-search"></i></button>
+      <button class="header-widget header-cate" title="Category List"><i class="icofont-align-left"></i><span>category</span></button>
+     </div>
+     <form class="header-form">
+      <input type="text" placeholder="Search anything..." />
+      <button><i class="icofont-ui-search"></i></button>
+     </form>
+     <div class="header-widget-group right">
+      <a class="header-widget" href="login.html" title="My Account"><img src="static/picture/user.png" alt="user" /><span>join here</span></a>
+      <a class="header-widget" href="compare.html" title="Compare List"><i class="icofont-ui-rotation"></i><sup>0</sup></a>
+      <a class="header-widget" href="wishlist.html" title="Wishlist"><i class="icofont-ui-love"></i><sup>0</sup></a>
+      <button class="header-widget header-cart" title="Cartlist"><i class="icofont-shopping-cart"></i><span>00.00</span><sup>9+</sup></button>
+     </div>
     </div>
-  </header>
-  <!--== End Header Wrapper ==-->
-  
-  <main class="main-content">
-    <!--== Start Page Header Area Wrapper ==-->
-    <div class="page-header-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <div class="page-header-content">
-              <nav class="breadcrumb-area">
-                <ul class="breadcrumb">
-                  <li><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-sep">/</li>
-                  <li>Blog</li>
-                </ul>
-              </nav>
-              <h4 class="title">Blog</h4>
+   </div>
+  </section>
+  <nav class="navbar-part">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-12">
+      <div class="navbar-content">
+       <ul class="navbar-list">
+        <li class="navbar-item dropdown"><a class="navbar-link dropdown-arrow" href="#">home</a>
+         <ul class="dropdown-position-list">
+          <li><a href="index.html">Home index</a></li>
+          <li><a href="home-grid.html">Home grid</a></li>
+          <li><a href="home-classic.html">Home classic</a></li>
+          <li><a href="home-category.html">Home category</a></li>
+         </ul></li>
+        <li class="navbar-item dropdown"><a class="navbar-link dropdown-arrow" href="#">shop</a>
+         <ul class="dropdown-position-list">
+          <li><a href="shop-grid.html">shop grid</a></li>
+          <li><a href="shop-standard.html">shop standard</a></li>
+          <li><a href="product-details.html">product details</a></li>
+         </ul></li>
+        <li class="navbar-item dropdown-megamenu"><a class="navbar-link dropdown-arrow" href="#">category</a>
+         <div class="megamenu">
+          <div class="container">
+           <div class="row row-cols-5">
+            <div class="col">
+             <div class="megamenu-wrap">
+              <h5 class="megamenu-title">vegetables</h5>
+              <ul class="megamenu-list">
+               <li><a href="#">carrot</a></li>
+               <li><a href="#">broccoli</a></li>
+               <li><a href="#">asparagus</a></li>
+               <li><a href="#">cauliflower</a></li>
+               <li><a href="#">eggplant</a></li>
+              </ul>
+             </div>
             </div>
+            <div class="col">
+             <div class="megamenu-wrap">
+              <h5 class="megamenu-title">fruits</h5>
+              <ul class="megamenu-list">
+               <li><a href="#">Apple</a></li>
+               <li><a href="#">orange</a></li>
+               <li><a href="#">banana</a></li>
+               <li><a href="#">strawberrie</a></li>
+               <li><a href="#">watermelon</a></li>
+              </ul>
+             </div>
+            </div>
+            <div class="col">
+             <div class="megamenu-wrap">
+              <h5 class="megamenu-title">dairy farms</h5>
+              <ul class="megamenu-list">
+               <li><a href="#">Butter</a></li>
+               <li><a href="#">Cheese</a></li>
+               <li><a href="#">Milk</a></li>
+               <li><a href="#">Eggs</a></li>
+               <li><a href="#">cream</a></li>
+              </ul>
+             </div>
+            </div>
+            <div class="col">
+             <div class="megamenu-wrap">
+              <h5 class="megamenu-title">seafoods</h5>
+              <ul class="megamenu-list">
+               <li><a href="#">Lobster</a></li>
+               <li><a href="#">Octopus</a></li>
+               <li><a href="#">Shrimp</a></li>
+               <li><a href="#">Halabos</a></li>
+               <li><a href="#">Maeuntang</a></li>
+              </ul>
+             </div>
+            </div>
+            <div class="col">
+             <div class="megamenu-wrap">
+              <h5 class="megamenu-title">diet foods</h5>
+              <ul class="megamenu-list">
+               <li><a href="#">Salmon</a></li>
+               <li><a href="#">Avocados</a></li>
+               <li><a href="#">Leafy Greens</a></li>
+               <li><a href="#">Boiled Potatoes</a></li>
+               <li><a href="#">Cottage Cheese</a></li>
+              </ul>
+             </div>
+            </div>
+            <div class="col">
+             <div class="megamenu-wrap">
+              <h5 class="megamenu-title">fast foods</h5>
+              <ul class="megamenu-list">
+               <li><a href="#">burger</a></li>
+               <li><a href="#">milkshake</a></li>
+               <li><a href="#">sandwich</a></li>
+               <li><a href="#">doughnut</a></li>
+               <li><a href="#">pizza</a></li>
+              </ul>
+             </div>
+            </div>
+            <div class="col">
+             <div class="megamenu-wrap">
+              <h5 class="megamenu-title">drinks</h5>
+              <ul class="megamenu-list">
+               <li><a href="#">cocktail</a></li>
+               <li><a href="#">hard soda</a></li>
+               <li><a href="#">shampain</a></li>
+               <li><a href="#">Wine</a></li>
+               <li><a href="#">barley</a></li>
+              </ul>
+             </div>
+            </div>
+            <div class="col">
+             <div class="megamenu-wrap">
+              <h5 class="megamenu-title">meats</h5>
+              <ul class="megamenu-list">
+               <li><a href="#">Meatball</a></li>
+               <li><a href="#">Sausage</a></li>
+               <li><a href="#">Poultry</a></li>
+               <li><a href="#">chicken</a></li>
+               <li><a href="#">Cows</a></li>
+              </ul>
+             </div>
+            </div>
+            <div class="col">
+             <div class="megamenu-wrap">
+              <h5 class="megamenu-title">fishes</h5>
+              <ul class="megamenu-list">
+               <li><a href="#">scads</a></li>
+               <li><a href="#">pomfret</a></li>
+               <li><a href="#">groupers</a></li>
+               <li><a href="#">anchovy</a></li>
+               <li><a href="#">mackerel</a></li>
+              </ul>
+             </div>
+            </div>
+            <div class="col">
+             <div class="megamenu-wrap">
+              <h5 class="megamenu-title">dry foods</h5>
+              <ul class="megamenu-list">
+               <li><a href="#">noodles</a></li>
+               <li><a href="#">Powdered milk</a></li>
+               <li><a href="#">nut &amp; yeast</a></li>
+               <li><a href="#">almonds</a></li>
+               <li><a href="#">pumpkin</a></li>
+              </ul>
+             </div>
+            </div>
+           </div>
           </div>
+         </div></li>
+        <li class="navbar-item dropdown-megamenu"><a class="navbar-link dropdown-arrow" href="#">pages</a>
+         <div class="megamenu">
+          <div class="container">
+           <div class="row">
+            <div class="col-lg-3">
+             <div class="megamenu-wrap">
+              <h5 class="megamenu-title">useful pages</h5>
+              <ul class="megamenu-list">
+               <li><a href="profile.html">my profile</a></li>
+               <li><a href="about.html">about us</a></li>
+               <li><a href="contact.html">contact us</a></li>
+               <li><a href="offer.html">offers</a></li>
+               <li><a href="faq.html">faqs</a></li>
+              </ul>
+             </div>
+            </div>
+            <div class="col-lg-3">
+             <div class="megamenu-wrap">
+              <h5 class="megamenu-title">more pages</h5>
+              <ul class="megamenu-list">
+               <li><a href="compare.html">compare</a></li>
+               <li><a href="privacy.html">privacy policy</a></li>
+               <li><a href="coming-soon.html">coming soon</a></li>
+               <li><a href="blank-page.html">blank page</a></li>
+               <li><a href="error.html">404 Error</a></li>
+              </ul>
+             </div>
+            </div>
+            <div class="col-lg-3">
+             <div class="megamenu-wrap">
+              <h5 class="megamenu-title">user action</h5>
+              <ul class="megamenu-list">
+               <li><a href="wishlist.html">wishlist</a></li>
+               <li><a href="checkout.html">checkout</a></li>
+               <li><a href="orderlist.html">order history</a></li>
+               <li><a href="invoice.html">order invoice</a></li>
+              </ul>
+             </div>
+            </div>
+            <div class="col-lg-3">
+             <div class="megamenu-promo">
+              <a href="#"><img src="static/picture/01.jpg" alt="promo" /></a>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div></li>
+        <li class="navbar-item dropdown"><a class="navbar-link dropdown-arrow" href="#">authentic</a>
+         <ul class="dropdown-position-list">
+          <li><a href="login.html">login</a></li>
+          <li><a href="register.html">register</a></li>
+          <li><a href="reset.html">reset password</a></li>
+          <li><a href="change.html">change password</a></li>
+         </ul></li>
+        <li class="navbar-item dropdown"><a class="navbar-link dropdown-arrow" href="#">blogs</a>
+         <ul class="dropdown-position-list">
+          <li><a href="blog-grid.html">blog grid</a></li>
+          <li><a href="blog-standard.html">blog standard</a></li>
+          <li><a href="blog-details.html">blog details</a></li>
+         </ul></li>
+       </ul>
+       <div class="navbar-info-group">
+        <div class="navbar-info">
+         <i class="icofont-ui-touch-phone"></i>
+         <p><small>call us</small><span>(+880) 183 8288 389</span></p>
         </div>
+        <div class="navbar-info">
+         <i class="icofont-ui-email"></i>
+         <p><small>email us</small><span>support@organe.com</span></p>
+        </div>
+       </div>
       </div>
+     </div>
     </div>
-    <!--== End Page Header Area Wrapper ==-->
-
-    <!--== Start Blog Area Wrapper ==-->
-    <section class="blog-area blog-inner-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-md-6">
-                <!--== Start Blog Item ==-->
-                <div class="post-item">
-                  <div class="inner-content">
-                    <div class="thumb">
-                      <a href="single-blog.html">
-                        <img class="w-100" src="assets/img/blog/b1.jpg" alt="Image-HasTech">
-                      </a>
-                    </div>
-                    <div class="content">
-                      <h4 class="title"><a href="single-blog.html">Temporibus autem quibusdam</a></h4>
-                      <ul class="meta">
-                        <li><span>post by: </span><a class="author" href="blog.html">Julie demo Admin</a></li>
-                        <li><span> - Jan, 25 , 21</span></li>
-                      </ul>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
-                      <a class="btn-theme" href="single-blog.html">Read more</a>
-                    </div>
-                  </div>
-                </div>
-                <!--== End Blog Item ==-->
-              </div>
-              <div class="col-md-6">
-                <!--== Start Blog Item ==-->
-                <div class="post-item">
-                  <div class="inner-content">
-                    <div class="thumb">
-                      <a href="single-blog.html">
-                        <img class="w-100" src="assets/img/blog/b2.jpg" alt="Image-HasTech">
-                      </a>
-                    </div>
-                    <div class="content">
-                      <h4 class="title"><a href="single-blog.html">But I must explain to you how all this mistaken ideal</a></h4>
-                      <ul class="meta">
-                        <li><span>post by: </span><a class="author" href="blog.html">Julie demo Admin</a></li>
-                        <li><span> - Jan, 25 , 21</span></li>
-                      </ul>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
-                      <a class="btn-theme" href="single-blog.html">Read more</a>
-                    </div>
-                  </div>
-                </div>
-                <!--== End Blog Item ==-->
-              </div>
-              <div class="col-md-6">
-                <!--== Start Blog Item ==-->
-                <div class="post-item">
-                  <div class="inner-content">
-                    <div class="thumb">
-                      <a href="single-blog.html">
-                        <img class="w-100" src="assets/img/blog/b3.jpg" alt="Image-HasTech">
-                      </a>
-                    </div>
-                    <div class="content">
-                      <h4 class="title"><a href="single-blog.html">My Favorite White Sneakers From Splurge To Save</a></h4>
-                      <ul class="meta">
-                        <li><span>post by: </span><a class="author" href="blog.html">Julie demo Admin</a></li>
-                        <li><span> - Jan, 25 , 21</span></li>
-                      </ul>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
-                      <a class="btn-theme" href="single-blog.html">Read more</a>
-                    </div>
-                  </div>
-                </div>
-                <!--== End Blog Item ==-->
-              </div>
-              <div class="col-md-6">
-                <!--== Start Blog Item ==-->
-                <div class="post-item">
-                  <div class="inner-content mb-0">
-                    <div class="thumb">
-                      <a href="single-blog.html">
-                        <img class="w-100" src="assets/img/blog/b1.jpg" alt="Image-HasTech">
-                      </a>
-                    </div>
-                    <div class="content">
-                      <h4 class="title"><a href="single-blog.html">But I must explain to you how all this mistaken ideal</a></h4>
-                      <ul class="meta">
-                        <li><span>post by: </span><a class="author" href="blog.html">Julie demo Admin</a></li>
-                        <li><span> - Jan, 25 , 21</span></li>
-                      </ul>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
-                      <a class="btn-theme" href="single-blog.html">Read more</a>
-                    </div>
-                  </div>
-                </div>
-                <!--== End Blog Item ==-->
-              </div>
-            </div>
-            <!--== Start Pagination Wrap ==-->
-            <div class="row">
-              <div class="col-12">
-                <div class="pagination-content-wrap border-top mb-0">
-                  <nav class="pagination-nav">
-                    <ul class="pagination justify-content-center mb-0">
-                      <li><a class="disabled active prev" href="#/">Prev</a></li>
-                      <li><a class="disabled active" href="#/">1</a></li>
-                      <li><a href="#/">2</a></li>
-                      <li><a class="next" href="#/">Next</a></li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-            <!--== End Pagination Wrap ==-->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--== End Blog Area Wrapper ==-->
-  </main>
-
-  <!--== Start Footer Area Wrapper ==-->
-  <footer class="footer-area">
-    <div class="footer-top-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-lg-3">
-            <!--== Start widget Item ==-->
-            <div class="widget-item">
-              <h4 class="widget-title">INFORMATION</h4>
-              <div class="widget-menu-wrap">
-                <ul class="nav-menu">
-                  <li><a href="#/">Specials</a></li>
-                  <li><a href="#/">New products</a></li>
-                  <li><a href="#/">Top sellers</a></li>
-                  <li><a href="#/">Our stores</a></li>
-                  <li><a href="#/">Contact us</a></li>
-                </ul>
-              </div>
-            </div>
-            <!--== End widget Item ==-->
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <!--== Start widget Item ==-->
-            <div class="widget-item">
-              <h4 class="widget-title">EXTRAS</h4>
-              <div class="widget-menu-wrap">
-                <ul class="nav-menu">
-                  <li><a href="#/">My orders</a></li>
-                  <li><a href="#/">My credit slips</a></li>
-                  <li><a href="#/">My addresses</a></li>
-                  <li><a href="#/">My personal info</a></li>
-                  <li><a href="#/">My wishlist</a></li>
-                </ul>
-              </div>
-            </div>
-            <!--== End widget Item ==-->
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <!--== Start widget Item ==-->
-            <div class="widget-item">
-              <h4 class="widget-title">QUICK LINKS</h4>
-              <div class="widget-menu-wrap">
-                <ul class="nav-menu">
-                  <li><a href="#/">New User</a></li>
-                  <li><a href="#/">Help Center</a></li>
-                  <li><a href="#/">Refund Policy</a></li>
-                  <li><a href="#/">Report Spam</a></li>
-                  <li><a href="#/">Account</a></li>
-                </ul>
-              </div>
-            </div>
-            <!--== End widget Item ==-->
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <!--== Start widget Item ==-->
-            <div class="widget-item">
-              <h4 class="widget-title">QUICK LINKS</h4>
-              <div class="widget-newsletter">
-                <p>Sign up for our newsletter & promotions</p>
-                <div class="newsletter-form">
-                  <form>
-                    <input type="email" class="form-control" placeholder="email@example.com">
-                    <button class="btn-submit" type="button">Subscribe</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <!--== End widget Item ==-->
-          </div>
-        </div>
-      </div>
-      
+   </div>
+  </nav>
+  <aside class="category-part">
+   <div class="category-container">
+    <div class="category-header">
+     <a href="#"><img src="static/picture/logo.png" alt="logo" /></a>
+     <button class="category-close"><i class="icofont-close"></i></button>
     </div>
-    <!--== Start Footer Bottom ==-->
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p class="copyright">Copyright &copy; 2021.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-          </div>
-        </div>
-      </div>
+    <ul class="category-list">
+     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-vegetable"></i>vegetables</a>
+      <ul class="dropdown-list">
+       <li><a href="#">asparagus</a></li>
+       <li><a href="#">broccoli</a></li>
+       <li><a href="#">carrot</a></li>
+      </ul></li>
+     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-groceries"></i>groceries</a>
+      <ul class="dropdown-list">
+       <li><a href="#">Grains &amp; Bread</a></li>
+       <li><a href="#">Dairy &amp; Eggs</a></li>
+       <li><a href="#">Oil &amp; Fat</a></li>
+      </ul></li>
+     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-fruit"></i>fruits</a>
+      <ul class="dropdown-list">
+       <li><a href="#">Apple</a></li>
+       <li><a href="#">Orange</a></li>
+       <li><a href="#">Strawberry</a></li>
+      </ul></li>
+     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-dairy-products"></i>dairy farm</a>
+      <ul class="dropdown-list">
+       <li><a href="#">Egg</a></li>
+       <li><a href="#">milk</a></li>
+       <li><a href="#">butter</a></li>
+      </ul></li>
+     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-crab"></i>sea foods</a>
+      <ul class="dropdown-list">
+       <li><a href="#">Lobster</a></li>
+       <li><a href="#">Octopus</a></li>
+       <li><a href="#">Shrimp</a></li>
+      </ul></li>
+     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-salad"></i>diet foods</a>
+      <ul class="dropdown-list">
+       <li><a href="#">Salmon</a></li>
+       <li><a href="#">Potatoes</a></li>
+       <li><a href="#">Greens</a></li>
+      </ul></li>
+     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-dried-fruit"></i>dry foods</a>
+      <ul class="dropdown-list">
+       <li><a href="#">noodles</a></li>
+       <li><a href="#">Powdered milk</a></li>
+       <li><a href="#">nut &amp; yeast</a></li>
+      </ul></li>
+     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-fast-food"></i>fast foods</a>
+      <ul class="dropdown-list">
+       <li><a href="#">mango</a></li>
+       <li><a href="#">plumsor</a></li>
+       <li><a href="#">raisins</a></li>
+      </ul></li>
+     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-cheers"></i>drinks</a>
+      <ul class="dropdown-list">
+       <li><a href="#">Wine</a></li>
+       <li><a href="#">Juice</a></li>
+       <li><a href="#">Water</a></li>
+      </ul></li>
+     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-beverage"></i>coffee</a>
+      <ul class="dropdown-list">
+       <li><a href="#">Cappuchino</a></li>
+       <li><a href="#">Espresso</a></li>
+       <li><a href="#">Latte</a></li>
+      </ul></li>
+     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-barbecue"></i>meats</a>
+      <ul class="dropdown-list">
+       <li><a href="#">Meatball</a></li>
+       <li><a href="#">Sausage</a></li>
+       <li><a href="#">Poultry</a></li>
+      </ul></li>
+     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-fish"></i>fishes</a>
+      <ul class="dropdown-list">
+       <li><a href="#">Agujjim</a></li>
+       <li><a href="#">saltfish</a></li>
+       <li><a href="#">pazza</a></li>
+      </ul></li>
+    </ul>
+    <div class="category-footer">
+     <p>All Rights Reserved by <a href="#">Mironcoder</a></p>
     </div>
-    <!--== End Footer Bottom ==-->
+   </div>
+  </aside>
+  <aside class="cart-part">
+   <div class="cart-container">
+    <div class="cart-header">
+     <div class="cart-total">
+      <i class="icofont-shopping-cart"></i>
+      <span>total item (5)</span>
+     </div>
+     <button class="cart-close"><i class="icofont-close"></i></button>
+    </div>
+    <ul class="cart-list">
+     <li class="cart-item">
+      <div class="cart-media">
+       <a href="#"><img src="static/picture/01.jpg" alt="product" /></a>
+       <button class="cart-delete"><i class="icofont-bin"></i></button>
+      </div>
+      <div class="cart-info-group">
+       <div class="cart-info">
+        <h6><a href="product-single.html">existing product name</a></h6>
+        <p>Unit Price - $8.75</p>
+       </div>
+       <div class="cart-action-group">
+        <div class="product-action">
+         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
+         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
+         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
+        </div>
+        <h6>$56.98</h6>
+       </div>
+      </div></li>
+     <li class="cart-item">
+      <div class="cart-media">
+       <a href="#"><img src="static/picture/02.jpg" alt="product" /></a>
+       <button class="cart-delete"><i class="icofont-bin"></i></button>
+      </div>
+      <div class="cart-info-group">
+       <div class="cart-info">
+        <h6><a href="product-single.html">existing product name</a></h6>
+        <p>Unit Price - $8.75</p>
+       </div>
+       <div class="cart-action-group">
+        <div class="product-action">
+         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
+         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
+         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
+        </div>
+        <h6>$56.98</h6>
+       </div>
+      </div></li>
+     <li class="cart-item">
+      <div class="cart-media">
+       <a href="#"><img src="static/picture/03.jpg" alt="product" /></a>
+       <button class="cart-delete"><i class="icofont-bin"></i></button>
+      </div>
+      <div class="cart-info-group">
+       <div class="cart-info">
+        <h6><a href="product-single.html">existing product name</a></h6>
+        <p>Unit Price - $8.75</p>
+       </div>
+       <div class="cart-action-group">
+        <div class="product-action">
+         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
+         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
+         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
+        </div>
+        <h6>$56.98</h6>
+       </div>
+      </div></li>
+     <li class="cart-item">
+      <div class="cart-media">
+       <a href="#"><img src="static/picture/04.jpg" alt="product" /></a>
+       <button class="cart-delete"><i class="icofont-bin"></i></button>
+      </div>
+      <div class="cart-info-group">
+       <div class="cart-info">
+        <h6><a href="product-single.html">existing product name</a></h6>
+        <p>Unit Price - $8.75</p>
+       </div>
+       <div class="cart-action-group">
+        <div class="product-action">
+         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
+         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
+         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
+        </div>
+        <h6>$56.98</h6>
+       </div>
+      </div></li>
+     <li class="cart-item">
+      <div class="cart-media">
+       <a href="#"><img src="static/picture/05.jpg" alt="product" /></a>
+       <button class="cart-delete"><i class="icofont-bin"></i></button>
+      </div>
+      <div class="cart-info-group">
+       <div class="cart-info">
+        <h6><a href="product-single.html">existing product name</a></h6>
+        <p>Unit Price - $8.75</p>
+       </div>
+       <div class="cart-action-group">
+        <div class="product-action">
+         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
+         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
+         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
+        </div>
+        <h6>$56.98</h6>
+       </div>
+      </div></li>
+    </ul>
+    <div class="cart-footer">
+     <button class="coupon-btn">Do you have a coupon code?</button>
+     <form class="coupon-form">
+      <input type="text" placeholder="Enter your coupon code" />
+      <button type="submit"><span>apply</span></button>
+     </form>
+     <a class="cart-checkout-btn" href="checkout.html"><span class="checkout-label">Proceed to Checkout</span><span class="checkout-price">$369.78</span></a>
+    </div>
+   </div>
+  </aside>
+  <aside class="mobile-nav">
+   <div class="nav-container">
+    <div class="nav-header">
+     <a href="#"><img src="static/picture/logo.png" alt="logo" /></a>
+     <button class="nav-close"><i class="icofont-close"></i></button>
+    </div>
+    <div class="nav-content">
+     <div class="nav-profile">
+      <a class="nav-user" href="#"><img src="static/picture/user.png" alt="user" /></a>
+      <h4 class="nav-name"><a href="login.html">join here</a></h4>
+     </div>
+     <div class="nav-select-group">
+      <div class="nav-select">
+       <i class="icofont-world"></i>
+       <select class="select"><option value="english" selected="">English</option><option value="bangali">Bangali</option><option value="arabic">Arabic</option></select>
+      </div>
+      <div class="nav-select">
+       <i class="icofont-money"></i>
+       <select class="select"><option value="english" selected="">Doller</option><option value="bangali">Pound</option><option value="arabic">Taka</option></select>
+      </div>
+     </div>
+     <ul class="nav-list">
+      <li><a class="nav-link dropdown-link" href="#"><i class="icofont-home"></i>Home</a>
+       <ul class="dropdown-list">
+        <li><a href="index.html">Home index</a></li>
+        <li><a href="home-grid.html">Home grid</a></li>
+        <li><a href="home-classic.html">Home classic</a></li>
+        <li><a href="home-category.html">Home category</a></li>
+       </ul></li>
+      <li><a class="nav-link dropdown-link" href="#"><i class="icofont-food-cart"></i>shop</a>
+       <ul class="dropdown-list">
+        <li><a href="shop-grid.html">shop grid</a></li>
+        <li><a href="shop-standard.html">shop standard</a></li>
+        <li><a href="product-details.html">product details</a></li>
+       </ul></li>
+      <li><a class="nav-link dropdown-link" href="#"><i class="icofont-page"></i>pages</a>
+       <ul class="dropdown-list">
+        <li><a href="faq.html">faqs</a></li>
+        <li><a href="offer.html">offers</a></li>
+        <li><a href="about.html">about us</a></li>
+        <li><a href="contact.html">contact us</a></li>
+        <li><a href="blank-page.html">blank page</a></li>
+        <li><a href="privacy.html">privacy policy</a></li>
+        <li><a href="coming-soon.html">coming soon</a></li>
+        <li><a href="error.html">404 Error</a></li>
+       </ul></li>
+      <li><a class="nav-link dropdown-link" href="#"><i class="icofont-bag-alt"></i>my account</a>
+       <ul class="dropdown-list">
+        <li><a href="profile.html">profile</a></li>
+        <li><a href="wishlist.html">wishlist</a></li>
+        <li><a href="compare.html">compare</a></li>
+        <li><a href="checkout.html">checkout</a></li>
+        <li><a href="orderlist.html">order history</a></li>
+        <li><a href="invoice.html">order invoice</a></li>
+       </ul></li>
+      <li><a class="nav-link dropdown-link" href="#"><i class="icofont-lock"></i>authentic</a>
+       <ul class="dropdown-list">
+        <li><a href="login.html">login</a></li>
+        <li><a href="register.html">register</a></li>
+        <li><a href="reset.html">reset password</a></li>
+        <li><a href="change.html">change password</a></li>
+       </ul></li>
+      <li><a class="nav-link dropdown-link" href="#"><i class="icofont-book-alt"></i>blogs</a>
+       <ul class="dropdown-list">
+        <li><a href="blog-grid.html">blog grid</a></li>
+        <li><a href="blog-standard.html">blog standard</a></li>
+        <li><a href="blog-details.html">blog details</a></li>
+       </ul></li>
+      <li><a class="nav-link" href="offer.html"><i class="icofont-sale-discount"></i>offers</a></li>
+      <li><a class="nav-link" href="profile.html"><i class="icofont-user-alt-3"></i>profile</a></li>
+      <li><a class="nav-link" href="wishlist.html"><i class="icofont-heart"></i>wishlist</a></li>
+      <li><a class="nav-link" href="checkout.html"><i class="icofont-checked"></i>checkout</a></li>
+      <li><a class="nav-link" href="orderlist.html"><i class="icofont-settings"></i>order history</a></li>
+      <li><a class="nav-link" href="faq.html"><i class="icofont-question-circle"></i>need help</a></li>
+      <li><a class="nav-link" href="contact.html"><i class="icofont-contacts"></i>contact us</a></li>
+      <li><a class="nav-link" href="login.html"><i class="icofont-logout"></i>logout</a></li>
+     </ul>
+     <div class="nav-info-group">
+      <div class="nav-info">
+       <i class="icofont-ui-touch-phone"></i>
+       <p><small>call us</small><span>(+880) 183 8288 389</span></p>
+      </div>
+      <div class="nav-info">
+       <i class="icofont-ui-email"></i>
+       <p><small>email us</small><span>support@organe.com</span></p>
+      </div>
+     </div>
+     <div class="nav-footer">
+      <p>All Rights Reserved by <a href="#">Mironcoder</a></p>
+     </div>
+    </div>
+   </div>
+  </aside>
+  <menu class="mobile-menu">
+   <a href="index.html" title="Home Page"><i class="icofont-ui-home"></i><span>Home</span></a>
+   <button class="cate-btn" title="Category List"><i class="icofont-listine-dots"></i><span>category</span></button>
+   <button class="cart-btn" title="Cartlist"><i class="icofont-shopping-cart"></i><span>cartlist</span><sup>9+</sup></button>
+   <a href="wishlist.html" title="Wishlist"><i class="icofont-ui-love"></i><span>wishlist</span><sup>0</sup></a>
+   <a href="compare.html" title="Compare List"><i class="icofont-ui-rotation"></i><span>compare</span><sup>0</sup></a>
+  </menu>
+  <section class="inner-section single-banner">
+   <div class="container">
+    <h2>blog grid</h2>
+    <ol class="breadcrumb">
+     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+     <li class="breadcrumb-item active" aria-current="page">Blog grid</li>
+    </ol>
+   </div>
+  </section>
+  <section class="inner-section blog-grid">
+   <div class="container">
+    <div class="row justify-content-center">
+     <div class="col-lg-8">
+      <div class="row">
+       <div class="col-lg-12">
+        <div class="blog-filter">
+         <select class="select"><option selected="">Short by Recent Blog</option><option value="1">Short by Best Comment</option><option value="2">Short by Best Share</option><option value="3">Short by Top View</option></select>
+         <ul>
+          <li><a href="blog-grid.html" class="active icofont-layout" title="Grid Layout"></a></li>
+          <li><a href="blog-standard.html" class="icofont-listing-box" title="Standard Layout"></a></li>
+         </ul>
+         <p>Showing 1–9 of 130 results</p>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-6 col-lg-6">
+        <div class="blog-card">
+         <div class="blog-media">
+          <a class="blog-img" href="#"><img src="static/picture/01.jpg" alt="blog" /></a>
+          <div class="blog-calender">
+           <span class="blog-date">02</span>
+           <span class="blog-month">feb</span>
+          </div>
+         </div>
+         <div class="blog-content">
+          <ul class="blog-meta">
+           <li><i class="icofont-speech-comments"></i><span>05 comments</span></li>
+           <li><i class="icofont-share-boxed"></i><span>02 share</span></li>
+          </ul>
+          <h4 class="blog-title"><a href="blog-details.html">Building Killer Robots Game Sehavior iOS With Fuzzy</a></h4>
+          <a class="blog-btn" href="#"><span>read more</span><i class="icofont-arrow-right"></i></a>
+         </div>
+        </div>
+       </div>
+       <div class="col-md-6 col-lg-6">
+        <div class="blog-card">
+         <div class="blog-media">
+          <a class="blog-img" href="#"><img src="static/picture/02.jpg" alt="blog" /></a>
+          <div class="blog-calender">
+           <span class="blog-date">02</span>
+           <span class="blog-month">feb</span>
+          </div>
+         </div>
+         <div class="blog-content">
+          <ul class="blog-meta">
+           <li><i class="icofont-speech-comments"></i><span>05 comments</span></li>
+           <li><i class="icofont-share-boxed"></i><span>02 share</span></li>
+          </ul>
+          <h4 class="blog-title"><a href="blog-details.html">Building Killer Robots Game Sehavior iOS With Fuzzy</a></h4>
+          <a class="blog-btn" href="#"><span>read more</span><i class="icofont-arrow-right"></i></a>
+         </div>
+        </div>
+       </div>
+       <div class="col-md-6 col-lg-6">
+        <div class="blog-card">
+         <div class="blog-media">
+          <a class="blog-img" href="#"><img src="static/picture/03.jpg" alt="blog" /></a>
+          <div class="blog-calender">
+           <span class="blog-date">02</span>
+           <span class="blog-month">feb</span>
+          </div>
+         </div>
+         <div class="blog-content">
+          <ul class="blog-meta">
+           <li><i class="icofont-speech-comments"></i><span>05 comments</span></li>
+           <li><i class="icofont-share-boxed"></i><span>02 share</span></li>
+          </ul>
+          <h4 class="blog-title"><a href="blog-details.html">Building Killer Robots Game Sehavior iOS With Fuzzy</a></h4>
+          <a class="blog-btn" href="#"><span>read more</span><i class="icofont-arrow-right"></i></a>
+         </div>
+        </div>
+       </div>
+       <div class="col-md-6 col-lg-6">
+        <div class="blog-card">
+         <div class="blog-media">
+          <a class="blog-img" href="#"><img src="static/picture/04.jpg" alt="blog" /></a>
+          <div class="blog-calender">
+           <span class="blog-date">02</span>
+           <span class="blog-month">feb</span>
+          </div>
+         </div>
+         <div class="blog-content">
+          <ul class="blog-meta">
+           <li><i class="icofont-speech-comments"></i><span>05 comments</span></li>
+           <li><i class="icofont-share-boxed"></i><span>02 share</span></li>
+          </ul>
+          <h4 class="blog-title"><a href="blog-details.html">Building Killer Robots Game Sehavior iOS With Fuzzy</a></h4>
+          <a class="blog-btn" href="#"><span>read more</span><i class="icofont-arrow-right"></i></a>
+         </div>
+        </div>
+       </div>
+       <div class="col-md-6 col-lg-6">
+        <div class="blog-card">
+         <div class="blog-media">
+          <a class="blog-img" href="#"><img src="static/picture/05.jpg" alt="blog" /></a>
+          <div class="blog-calender">
+           <span class="blog-date">02</span>
+           <span class="blog-month">feb</span>
+          </div>
+         </div>
+         <div class="blog-content">
+          <ul class="blog-meta">
+           <li><i class="icofont-speech-comments"></i><span>05 comments</span></li>
+           <li><i class="icofont-share-boxed"></i><span>02 share</span></li>
+          </ul>
+          <h4 class="blog-title"><a href="blog-details.html">Building Killer Robots Game Sehavior iOS With Fuzzy</a></h4>
+          <a class="blog-btn" href="#"><span>read more</span><i class="icofont-arrow-right"></i></a>
+         </div>
+        </div>
+       </div>
+       <div class="col-md-6 col-lg-6">
+        <div class="blog-card">
+         <div class="blog-media">
+          <a class="blog-img" href="#"><img src="static/picture/06.jpg" alt="blog" /></a>
+          <div class="blog-calender">
+           <span class="blog-date">02</span>
+           <span class="blog-month">feb</span>
+          </div>
+         </div>
+         <div class="blog-content">
+          <ul class="blog-meta">
+           <li><i class="icofont-speech-comments"></i><span>05 comments</span></li>
+           <li><i class="icofont-share-boxed"></i><span>02 share</span></li>
+          </ul>
+          <h4 class="blog-title"><a href="blog-details.html">Building Killer Robots Game Sehavior iOS With Fuzzy</a></h4>
+          <a class="blog-btn" href="#"><span>read more</span><i class="icofont-arrow-right"></i></a>
+         </div>
+        </div>
+       </div>
+       <div class="col-md-6 col-lg-6">
+        <div class="blog-card">
+         <div class="blog-media">
+          <a class="blog-img" href="#"><img src="static/picture/07.jpg" alt="blog" /></a>
+          <div class="blog-calender">
+           <span class="blog-date">02</span>
+           <span class="blog-month">feb</span>
+          </div>
+         </div>
+         <div class="blog-content">
+          <ul class="blog-meta">
+           <li><i class="icofont-speech-comments"></i><span>05 comments</span></li>
+           <li><i class="icofont-share-boxed"></i><span>02 share</span></li>
+          </ul>
+          <h4 class="blog-title"><a href="blog-details.html">Building Killer Robots Game Sehavior iOS With Fuzzy</a></h4>
+          <a class="blog-btn" href="#"><span>read more</span><i class="icofont-arrow-right"></i></a>
+         </div>
+        </div>
+       </div>
+       <div class="col-md-6 col-lg-6">
+        <div class="blog-card">
+         <div class="blog-media">
+          <a class="blog-img" href="#"><img src="static/picture/08.jpg" alt="blog" /></a>
+          <div class="blog-calender">
+           <span class="blog-date">02</span>
+           <span class="blog-month">feb</span>
+          </div>
+         </div>
+         <div class="blog-content">
+          <ul class="blog-meta">
+           <li><i class="icofont-speech-comments"></i><span>05 comments</span></li>
+           <li><i class="icofont-share-boxed"></i><span>02 share</span></li>
+          </ul>
+          <h4 class="blog-title"><a href="blog-details.html">Building Killer Robots Game Sehavior iOS With Fuzzy</a></h4>
+          <a class="blog-btn" href="#"><span>read more</span><i class="icofont-arrow-right"></i></a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-lg-12">
+        <ul class="pagination">
+         <li class="page-item"><a class="page-link" href="#"><i class="icofont-arrow-left"></i></a></li>
+         <li class="page-item"><a class="page-link active" href="#">1</a></li>
+         <li class="page-item"><a class="page-link" href="#">2</a></li>
+         <li class="page-item"><a class="page-link" href="#">3</a></li>
+         <li class="page-item">...</li>
+         <li class="page-item"><a class="page-link" href="#">65</a></li>
+         <li class="page-item"><a class="page-link" href="#"><i class="icofont-arrow-right"></i></a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-7 col-lg-4">
+      <div class="blog-widget">
+       <h3 class="blog-widget-title">Find blogs</h3>
+       <form class="blog-widget-form">
+        <input type="text" placeholder="Search blogs" />
+        <button class="icofont-search-1"></button>
+       </form>
+      </div>
+      <div class="blog-widget">
+       <h3 class="blog-widget-title">popular feeds</h3>
+       <ul class="blog-widget-feed">
+        <li><a class="blog-widget-media" href="#"><img src="static/picture/01.jpg" alt="blog-widget" /></a><h6 class="blog-widget-text"><a href="#">Lorem ipsum dolor sit amet consectetur</a><span>february 02, 2021</span></h6></li>
+        <li><a class="blog-widget-media" href="#"><img src="static/picture/02.jpg" alt="blog-widget" /></a><h6 class="blog-widget-text"><a href="#">Lorem ipsum dolor sit amet consectetur</a><span>february 02, 2021</span></h6></li>
+        <li><a class="blog-widget-media" href="#"><img src="static/picture/03.jpg" alt="blog-widget" /></a><h6 class="blog-widget-text"><a href="#">Lorem ipsum dolor sit amet consectetur</a><span>february 02, 2021</span></h6></li>
+       </ul>
+      </div>
+      <div class="blog-widget">
+       <h3 class="blog-widget-title">top categories</h3>
+       <ul class="blog-widget-category">
+        <li><a href="#">farming <span>22</span></a></li>
+        <li><a href="#">agriculture <span>14</span></a></li>
+        <li><a href="#">organic food <span>35</span></a></li>
+        <li><a href="#">vegetables <span>67</span></a></li>
+        <li><a href="#">healthy life <span>89</span></a></li>
+       </ul>
+      </div>
+      <div class="blog-widget">
+       <h3 class="blog-widget-title">popular tags</h3>
+       <ul class="blog-widget-tag">
+        <li><a href="#">farming</a></li>
+        <li><a href="#">organic</a></li>
+        <li><a href="#">food</a></li>
+        <li><a href="#">healthy</a></li>
+        <li><a href="#">agriculture</a></li>
+        <li><a href="#">vegetables</a></li>
+        <li><a href="#">grocery</a></li>
+        <li><a href="#">vegan</a></li>
+        <li><a href="#">life</a></li>
+        <li><a href="#">enjoy</a></li>
+       </ul>
+      </div>
+      <div class="blog-widget">
+       <h3 class="blog-widget-title">follow us</h3>
+       <ul class="blog-widget-social">
+        <li><a href="#" class="icofont-facebook"></a></li>
+        <li><a href="#" class="icofont-twitter"></a></li>
+        <li><a href="#" class="icofont-linkedin"></a></li>
+        <li><a href="#" class="icofont-pinterest"></a></li>
+        <li><a href="#" class="icofont-instagram"></a></li>
+       </ul>
+      </div>
+      <div class="blog-widget">
+       <a href="#"><img class="img-fluid" src="static/picture/01.jpg" alt="promo" /></a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="news-part">
+   <div class="container">
+    <div class="row align-items-center">
+     <div class="col-md-5 col-lg-6 col-xl-7">
+      <div class="news-text">
+       <h2>Get 20% Discount for Subscriber</h2>
+       <p>Lorem ipsum dolor consectetur adipisicing accusantium</p>
+      </div>
+     </div>
+     <div class="col-md-7 col-lg-6 col-xl-5">
+      <form class="news-form">
+       <input type="text" placeholder="Enter Your Email Address" />
+       <button><span><i class="icofont-ui-email"></i>Subscribe</span></button>
+      </form>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="visual-part">
+   <div class="container">
+    <div class="row">
+     <div class="col-sm-6 col-lg-3">
+      <div class="visual-wrap">
+       <div class="visual-icon">
+        <i class="icofont-vehicle-delivery-van"></i>
+       </div>
+       <div class="visual-content">
+        <h5>free home delivery</h5>
+        <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+       </div>
+      </div>
+     </div>
+     <div class="col-sm-6 col-lg-3">
+      <div class="visual-wrap">
+       <div class="visual-icon">
+        <i class="icofont-retweet"></i>
+       </div>
+       <div class="visual-content">
+        <h5>instant return policy</h5>
+        <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+       </div>
+      </div>
+     </div>
+     <div class="col-sm-6 col-lg-3">
+      <div class="visual-wrap">
+       <div class="visual-icon">
+        <i class="icofont-support"></i>
+       </div>
+       <div class="visual-content">
+        <h5>quick support system</h5>
+        <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+       </div>
+      </div>
+     </div>
+     <div class="col-sm-6 col-lg-3">
+      <div class="visual-wrap">
+       <div class="visual-icon">
+        <i class="icofont-ssl-security"></i>
+       </div>
+       <div class="visual-content">
+        <h5>secure payment way</h5>
+        <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer class="footer-part">
+   <div class="container">
+    <div class="row">
+     <div class="col-sm-6 col-xl-3">
+      <div class="footer-widget">
+       <a class="footer-logo" href="#"><img src="static/picture/logo.png" alt="logo" /></a>
+       <p class="footer-desc">Adipisci asperiores ipsum ipsa repellat consequatur repudiandae quisquam assumenda dolor perspiciatis sit ipsum dolor amet.</p>
+       <ul class="footer-social">
+        <li><a class="icofont-facebook" href="#"></a></li>
+        <li><a class="icofont-twitter" href="#"></a></li>
+        <li><a class="icofont-linkedin" href="#"></a></li>
+        <li><a class="icofont-instagram" href="#"></a></li>
+        <li><a class="icofont-pinterest" href="#"></a></li>
+       </ul>
+      </div>
+     </div>
+     <div class="col-sm-6 col-xl-3">
+      <div class="footer-widget contact">
+       <h3 class="footer-title">contact us</h3>
+       <ul class="footer-contact">
+        <li><i class="icofont-ui-email"></i><p><span>support@organe.com</span><span>carrer@organe.com</span></p></li>
+        <li><i class="icofont-ui-touch-phone"></i><p><span>+120 279 532 13</span><span>+120 279 532 14</span></p></li>
+        <li><i class="icofont-location-pin"></i><p>1Hd- 50, 010 Avenue, NY 90001 United States</p></li>
+       </ul>
+      </div>
+     </div>
+     <div class="col-sm-6 col-xl-3">
+      <div class="footer-widget">
+       <h3 class="footer-title">quick Links</h3>
+       <div class="footer-links">
+        <ul>
+         <li><a href="#">My Account</a></li>
+         <li><a href="#">Order History</a></li>
+         <li><a href="#">Order Tracking</a></li>
+         <li><a href="#">Best Seller</a></li>
+         <li><a href="#">New Arrivals</a></li>
+        </ul>
+        <ul>
+         <li><a href="#">Location</a></li>
+         <li><a href="#">Affiliates</a></li>
+         <li><a href="#">Contact</a></li>
+         <li><a href="#">Carrer</a></li>
+         <li><a href="#">Faq</a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="col-sm-6 col-xl-3">
+      <div class="footer-widget">
+       <h3 class="footer-title">Download App</h3>
+       <p class="footer-desc">Lorem ipsum dolor sit amet tenetur dignissimos ipsum eligendi autem obcaecati minus ducimus totam reprehenderit exercitationem!</p>
+       <div class="footer-app">
+        <a href="#"><img src="static/picture/google-store.png" alt="google" /></a>
+        <a href="#"><img src="static/picture/app-store.png" alt="app" /></a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="row">
+     <div class="col-12">
+      <div class="footer-bottom">
+       <p class="footer-copytext">Copyright &copy; 2021.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+       <div class="footer-card">
+        <a href="#"><img src="static/picture/01.jpg" alt="payment" /></a>
+        <a href="#"><img src="static/picture/02.jpg" alt="payment" /></a>
+        <a href="#"><img src="static/picture/03.jpg" alt="payment" /></a>
+        <a href="#"><img src="static/picture/04.jpg" alt="payment" /></a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
   </footer>
-  <!--== End Footer Area Wrapper ==-->
-
-  <!--== Scroll Top Button ==-->
-  <div id="scroll-to-top" class="scroll-to-top"><span class="fa fa-angle-double-up"></span></div>
-
-  <!--== Start Quick View Menu ==-->
-  <aside class="product-quick-view-modal">
-    <div class="product-quick-view-inner">
-      <div class="product-quick-view-content">
-        <button type="button" class="btn-close">
-          <span class="close-icon"><i class="fa fa-close"></i></span>
-        </button>
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-12">
-            <div class="thumb">
-              <img src="assets/img/shop/quick-view1.jpg" alt="Alan-Shop">
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-12">
-            <div class="content">
-              <h4 class="title">Meta Slevless Dress</h4>
-              <div class="prices">
-                <del class="price-old">$85.00</del>
-                <span class="price">$70.00</span>
-              </div>
-              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,</p>
-              <div class="quick-view-select">
-                <div class="quick-view-select-item">
-                  <label for="forSizes" class="form-label">Size:</label>
-                  <select class="form-select" id="forSizes" required>
-                    <option selected value="">s</option>
-                    <option>m</option>
-                    <option>l</option>
-                    <option>xl</option>
-                  </select>
-                </div>
-                <div class="quick-view-select-item">
-                  <label for="forColors" class="form-label">Color:</label>
-                  <select class="form-select" id="forColors" required>
-                    <option selected value="">red</option>
-                    <option>green</option>
-                    <option>blue</option>
-                    <option>yellow</option>
-                    <option>white</option>
-                  </select>
-                </div>
-              </div>
-              <div class="action-top">
-                <div class="pro-qty">
-                  <input type="text" id="quantity4" title="Quantity" value="1" />
-                </div>
-                <button class="btn btn-black">Add to cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="canvas-overlay"></div>
-  </aside>
-  <!--== End Quick View Menu ==-->
-
-  <!--== Start Side Menu ==-->
-  <aside class="off-canvas-wrapper">
-    <div class="off-canvas-inner">
-      <div class="off-canvas-overlay"></div>
-      <!-- Start Off Canvas Content Wrapper -->
-      <div class="off-canvas-content">
-        <!-- Off Canvas Header -->
-        <div class="off-canvas-header">
-          <div class="close-action">
-            <button class="btn-menu-close">menu <i class="fa fa-chevron-left"></i></button>
-          </div>
-        </div>
-
-        <div class="off-canvas-item">
-          <!-- Start Mobile Menu Wrapper -->
-          <div class="res-mobile-menu menu-active-one">
-            <!-- Note Content Auto Generate By Jquery From Main Menu -->
-          </div>
-          <!-- End Mobile Menu Wrapper -->
-        </div>
-      </div>
-      <!-- End Off Canvas Content Wrapper -->
-    </div>
-  </aside>
-  <!--== End Side Menu ==-->
-</div>
-
-<!--=======================Javascript============================-->
-
-<!--=== jQuery Modernizr Min Js ===-->
-<script src="assets/js/modernizr.js"></script>
-<!--=== jQuery Min Js ===-->
-<script src="assets/js/jquery-main.js"></script>
-<!--=== jQuery Migration Min Js ===-->
-<script src="assets/js/jquery-migrate.js"></script>
-<!--=== jQuery Popper Min Js ===-->
-<script src="assets/js/popper.min.js"></script>
-<!--=== jQuery Bootstrap Min Js ===-->
-<script src="assets/js/bootstrap.min.js"></script>
-<!--=== jQuery Headroom Min Js ===-->
-<script src="assets/js/headroom.min.js"></script>
-<!--=== jQuery Swiper Min Js ===-->
-<script src="assets/js/swiper.min.js"></script>
-<!--=== jQuery Fancybox Min Js ===-->
-<script src="assets/js/fancybox.min.js"></script>
-<!--=== jQuery Slick Nav Js ===-->
-<script src="assets/js/slicknav.js"></script>
-
-<!--=== jQuery Custom Js ===-->
-<script src="assets/js/custom.js"></script>
-
-</body>
-
+  <script src="static/js/jquery-1.12.4.min.js"></script>
+  <script src="static/js/popper.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/nice-select.min.js"></script>
+  <script src="static/js/venobox.min.js"></script>
+  <script src="static/js/jquery-ui.js"></script>
+  <script src="static/js/slick.min.js"></script>
+  <script src="static/js/nice-select.js"></script>
+  <script src="static/js/price-range.js"></script>
+  <script src="static/js/accordion.js"></script>
+  <script src="static/js/venobox.js"></script>
+  <script src="static/js/slick.js"></script>
+  <script src="static/js/main.js"></script>
+ </body>
 </html>
