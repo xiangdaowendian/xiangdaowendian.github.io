@@ -1,3086 +1,632 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
- <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="author" content="mironcoder" />
-  <meta name="email" content="mironcoder@gmail.com" />
-  <meta name="profile" content="https://themeforest.net/user/mironcoder" />
-  <meta name="template" content="Organe" />
-  <meta name="title" content="Organe - Organic Food HTML Template" />
-  <meta name="keywords" content="organe, organic, food, shop, ecommerce, store, html, agriculture, vegetable, organic food, organic product, organic farm, organic life, organic shop, food store" />
-  <title>Organe - Home Index</title>
-  <link rel="icon" href="images/favicon.png" />
-  <link rel="stylesheet" href="static/css/flaticon.css" />
-  <link rel="stylesheet" href="static/css/icofont.min.css" />
-  <link rel="stylesheet" href="static/css/nice-select.min.css" />
-  <link rel="stylesheet" href="static/css/jquery-ui.min.css" />
-  <link rel="stylesheet" href="static/css/venobox.min.css" />
-  <link rel="stylesheet" href="static/css/slick.min.css" />
-  <link rel="stylesheet" href="static/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="static/css/main.css" />
-  <link rel="stylesheet" href="static/css/index.css" />
- </head>
- <body>
-  <section class="header-top">
-   <div class="container">
-    <div class="row">
-     <div class="col-md-12 col-lg-5">
-      <div class="header-top-welcome">
-       <p>Welcome to Ecomart in Your Dream Online Store!</p>
-      </div>
-     </div>
-     <div class="col-md-5 col-lg-3">
-      <div class="header-top-select">
-       <div class="header-select">
-        <i class="icofont-world"></i>
-        <select class="select"><option value="english" selected="">english</option><option value="bangali">bangali</option><option value="arabic">arabic</option></select>
-       </div>
-       <div class="header-select">
-        <i class="icofont-money"></i>
-        <select class="select"><option value="english" selected="">doller</option><option value="bangali">pound</option><option value="arabic">taka</option></select>
-       </div>
-      </div>
-     </div>
-     <div class="col-md-7 col-lg-4">
-      <ul class="header-top-list">
-       <li><a href="offer.html">offers</a></li>
-       <li><a href="faq.html">need help</a></li>
-       <li><a href="contact.html">contact us</a></li>
-      </ul>
-     </div>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>广西电子商务公共服务平台大数据中心</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <style>
+        .t_title{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 2.5em;
+            line-height: 80px;
+            color: #fff;
+        }
+        #chart_map{
+            cursor: pointer;
+        }
+        .t_show{
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 2px;
+            background: #2C58A6;
+            padding: 2px 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!--header-->
+<div class="header">
+    <div class="bg_header">
+        <div class="header_nav fl t_title">
+            广西电子商务公共服务平台大数据中心
+        </div> 
     </div>
-   </div>
-  </section>
-  <section class="header-part">
-   <div class="container-fluid">
-    <div class="header-content-group">
-     <div class="header-widget-group left">
-      <button class="header-widget header-user" href="#" title="My Account"><img src="static/picture/user.png" alt="user" /></button>
-      <a class="header-logo" href="index.html"><img src="static/picture/logo.png" alt="logo" /></a>
-      <button class="header-widget header-src" title="Search Bar"><i class="icofont-ui-search"></i></button>
-      <button class="header-widget header-cate" title="Category List"><i class="icofont-align-left"></i><span>category</span></button>
-     </div>
-     <form class="header-form">
-      <input type="text" placeholder="Search anything..." />
-      <button><i class="icofont-ui-search"></i></button>
-     </form>
-     <div class="header-widget-group right">
-      <a class="header-widget" href="login.html" title="My Account"><img src="static/picture/user.png" alt="user" /><span>join here</span></a>
-      <a class="header-widget" href="compare.html" title="Compare List"><i class="icofont-ui-rotation"></i><sup>0</sup></a>
-      <a class="header-widget" href="wishlist.html" title="Wishlist"><i class="icofont-ui-love"></i><sup>0</sup></a>
-      <button class="header-widget header-cart" title="Cartlist"><i class="icofont-shopping-cart"></i><span>00.00</span><sup>9+</sup></button>
-     </div>
-    </div>
-   </div>
-  </section>
-  <nav class="navbar-part">
-   <div class="container">
-    <div class="row">
-     <div class="col-lg-12">
-      <div class="navbar-content">
-       <ul class="navbar-list">
-        <li class="navbar-item dropdown"><a class="navbar-link dropdown-arrow" href="#">home</a>
-         <ul class="dropdown-position-list">
-          <li><a href="index.html">Home index</a></li>
-          <li><a href="home-grid.html">Home grid</a></li>
-          <li><a href="home-classic.html">Home classic</a></li>
-          <li><a href="home-category.html">Home category</a></li>
-         </ul></li>
-        <li class="navbar-item dropdown"><a class="navbar-link dropdown-arrow" href="#">shop</a>
-         <ul class="dropdown-position-list">
-          <li><a href="shop-grid.html">shop grid</a></li>
-          <li><a href="shop-standard.html">shop standard</a></li>
-          <li><a href="product-details.html">product details</a></li>
-         </ul></li>
-        <li class="navbar-item dropdown-megamenu"><a class="navbar-link dropdown-arrow" href="#">category</a>
-         <div class="megamenu">
-          <div class="container">
-           <div class="row row-cols-5">
-            <div class="col">
-             <div class="megamenu-wrap">
-              <h5 class="megamenu-title">vegetables</h5>
-              <ul class="megamenu-list">
-               <li><a href="#">carrot</a></li>
-               <li><a href="#">broccoli</a></li>
-               <li><a href="#">asparagus</a></li>
-               <li><a href="#">cauliflower</a></li>
-               <li><a href="#">eggplant</a></li>
-              </ul>
-             </div>
+</div>
+
+<!--main-->
+<div class="data_content">
+    <!-- <div class="data_time">
+        温馨提示: 点击模块后跳转至详情页面。        
+    </div> -->
+
+    <div class="data_main">
+        <div class="main_left fl">
+            <div class="left_1 t_btn6" style="cursor: pointer;">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i> 
+                    <i class="l_t_line"></i> 
+                </div> 
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i> 
+                    <i class="r_t_line"></i> 
+                </div> 
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i> 
+                    <i class="b_l_line"></i> 
+                </div> 
+                    <!--右下边框-->
+                    <div class="t_line_box">
+                    <i class="r_b_line"></i> 
+                    <i class="b_r_line"></i> 
+                </div> 
+                <div class="main_title">
+                    <img src="picture/t_1.png" alt="">
+                  全区快递企业月寄递量
+                </div>
+                <div id="chart_1" class="chart" style="width:100%;height: 280px;"></div>
             </div>
-            <div class="col">
-             <div class="megamenu-wrap">
-              <h5 class="megamenu-title">fruits</h5>
-              <ul class="megamenu-list">
-               <li><a href="#">Apple</a></li>
-               <li><a href="#">orange</a></li>
-               <li><a href="#">banana</a></li>
-               <li><a href="#">strawberrie</a></li>
-               <li><a href="#">watermelon</a></li>
-              </ul>
-             </div>
+            <div class="left_2" style="cursor: pointer;">
+                <div class="t_line_box">
+                    <i class="t_l_line"></i> 
+                    <i class="l_t_line"></i> 
+                </div> 
+                <div class="t_line_box">
+                    <i class="t_r_line"></i> 
+                    <i class="r_t_line"></i> 
+                </div> 
+                <div class="t_line_box">
+                    <i class="l_b_line"></i> 
+                    <i class="b_l_line"></i> 
+                </div> 
+                    <div class="t_line_box">
+                    <i class="r_b_line"></i> 
+                    <i class="b_r_line"></i> 
+                </div> 
+                <div class="main_title">
+                    <img src="picture/t_2.png" alt="">
+                    电子商务销售额、订单数
+                </div>
+                <div id="chart_2" class="chart t_btn9" style="width:100%;height: 280px;"></div>
             </div>
-            <div class="col">
-             <div class="megamenu-wrap">
-              <h5 class="megamenu-title">dairy farms</h5>
-              <ul class="megamenu-list">
-               <li><a href="#">Butter</a></li>
-               <li><a href="#">Cheese</a></li>
-               <li><a href="#">Milk</a></li>
-               <li><a href="#">Eggs</a></li>
-               <li><a href="#">cream</a></li>
-              </ul>
-             </div>
+        </div>
+        <div class="main_center fl">
+            <div class="center_text" style="position: relative;">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i> 
+                    <i class="l_t_line"></i> 
+                </div> 
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i> 
+                    <i class="r_t_line"></i> 
+                </div> 
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i> 
+                    <i class="b_l_line"></i> 
+                </div> 
+                 <!--右下边框-->
+                 <div class="t_line_box">
+                    <i class="r_b_line"></i> 
+                    <i class="b_r_line"></i> 
+                </div> 
+                <div class="main_title" style="width: 230px;">
+                    <img src="picture/t_3.png" alt="">
+                    广西电子商务进农村
+                </div>
+                <div id="chart_map" style="width:100%;height:610px;">
+                </div>
+                <div class="linshi_zdy">
+                    <ul>
+                        <li><span></span>2015批(8个)</li>
+                        <li><span></span>2016批(15个)</li>
+                        <li><span></span>2017批(13个)</li>
+                        <li><span></span>2018批(11个)</li>
+                    </ul>
+                </div>
             </div>
-            <div class="col">
-             <div class="megamenu-wrap">
-              <h5 class="megamenu-title">seafoods</h5>
-              <ul class="megamenu-list">
-               <li><a href="#">Lobster</a></li>
-               <li><a href="#">Octopus</a></li>
-               <li><a href="#">Shrimp</a></li>
-               <li><a href="#">Halabos</a></li>
-               <li><a href="#">Maeuntang</a></li>
-              </ul>
-             </div>
+        </div>
+<style type="text/css">
+.linshi_zdy{
+    position: absolute;
+    right: 0px;
+    top: 450px;
+}
+.linshi_zdy li{
+    width: 150px;
+    font-size: 16px;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+.linshi_zdy span{
+    display: block;
+    width: 14px;
+    height: 14px;
+    float: left;
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+.linshi_zdy li:first-child{
+    color: #ff0000;
+}
+.linshi_zdy li:first-child span{
+    background: #ff0000;
+}
+.linshi_zdy li:nth-child(2){
+    color: #9cff00;
+}
+.linshi_zdy li:nth-child(2) span{
+    background: #9cff00;
+}
+.linshi_zdy li:nth-child(3){
+    color: #fff;
+}
+.linshi_zdy li:nth-child(3) span{
+    background: #fff;
+}
+.linshi_zdy li:nth-child(4){
+    color: #f4a100;
+}
+.linshi_zdy li:nth-child(4) span{
+    background: #f4a100;
+}
+</style>
+        <div class="main_right fr">
+            <div class="right_1">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i> 
+                    <i class="l_t_line"></i> 
+                </div> 
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i> 
+                    <i class="r_t_line"></i> 
+                </div> 
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i> 
+                    <i class="b_l_line"></i> 
+                </div> 
+                    <!--右下边框-->
+                    <div class="t_line_box">
+                    <i class="r_b_line"></i> 
+                    <i class="b_r_line"></i> 
+                </div> 
+                <div class="main_title" style="width:220px;">
+                    <img src="picture/t_4.png" alt="">
+                    全区快递月寄递数量
+                </div>
+                <div id="chart_3" class="echart t_btn7" style="width:100%;height: 280px;"></div>
             </div>
-            <div class="col">
-             <div class="megamenu-wrap">
-              <h5 class="megamenu-title">diet foods</h5>
-              <ul class="megamenu-list">
-               <li><a href="#">Salmon</a></li>
-               <li><a href="#">Avocados</a></li>
-               <li><a href="#">Leafy Greens</a></li>
-               <li><a href="#">Boiled Potatoes</a></li>
-               <li><a href="#">Cottage Cheese</a></li>
-              </ul>
-             </div>
+            <div class="right_2">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i> 
+                    <i class="l_t_line"></i> 
+                </div> 
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i> 
+                    <i class="r_t_line"></i> 
+                </div> 
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i> 
+                    <i class="b_l_line"></i> 
+                </div> 
+                    <!--右下边框-->
+                    <div class="t_line_box">
+                    <i class="r_b_line"></i> 
+                    <i class="b_r_line"></i> 
+                </div> 
+                <div class="main_title" style="width:200px;">
+                    <img src="picture/t_5.png" alt="">
+                    电商企业入驻情况
+                </div>
+                <div id="chart_4" class="echart fl t_btn4" style="width:100%;height: 280px;cursor: pointer;"></div>
             </div>
-            <div class="col">
-             <div class="megamenu-wrap">
-              <h5 class="megamenu-title">fast foods</h5>
-              <ul class="megamenu-list">
-               <li><a href="#">burger</a></li>
-               <li><a href="#">milkshake</a></li>
-               <li><a href="#">sandwich</a></li>
-               <li><a href="#">doughnut</a></li>
-               <li><a href="#">pizza</a></li>
-              </ul>
-             </div>
+        </div>
+    </div>
+    <div class="data_bottom">
+        <div class="bottom_1 fl t_btn5" style="cursor: pointer;">
+            <div class="t_line_box">
+                <i class="t_l_line"></i> 
+                <i class="l_t_line"></i> 
+            </div> 
+            <div class="t_line_box">
+                <i class="t_r_line"></i> 
+                <i class="r_t_line"></i> 
+            </div> 
+            <div class="t_line_box">
+                <i class="l_b_line"></i> 
+                <i class="b_l_line"></i> 
+            </div> 
+                <div class="t_line_box">
+                <i class="r_b_line"></i> 
+                <i class="b_r_line"></i> 
             </div>
-            <div class="col">
-             <div class="megamenu-wrap">
-              <h5 class="megamenu-title">drinks</h5>
-              <ul class="megamenu-list">
-               <li><a href="#">cocktail</a></li>
-               <li><a href="#">hard soda</a></li>
-               <li><a href="#">shampain</a></li>
-               <li><a href="#">Wine</a></li>
-               <li><a href="#">barley</a></li>
-              </ul>
-             </div>
+            <div class="main_title">
+                <img src="picture/t_7.png" alt="">
+                农村电商交易概况
             </div>
-            <div class="col">
-             <div class="megamenu-wrap">
-              <h5 class="megamenu-title">meats</h5>
-              <ul class="megamenu-list">
-               <li><a href="#">Meatball</a></li>
-               <li><a href="#">Sausage</a></li>
-               <li><a href="#">Poultry</a></li>
-               <li><a href="#">chicken</a></li>
-               <li><a href="#">Cows</a></li>
-              </ul>
-             </div>
+            <div class="main_table t_btn8">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>概况名称</th>
+                            <th>详情</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>累计交易总金额</td>
+                            <td>4058.56 万元</td>
+                        </tr>
+                        <tr>
+                            <td>累计交易订单数量</td>
+                            <td>437753 件</td>
+                        </tr>
+                        <tr>
+                            <td>累计产品SKU数量</td>
+                            <td>360 个</td>
+                        </tr>
+                        <tr>
+                            <td>本月交易总额</td>
+                            <td>242.42 万元</td>
+                        </tr>
+                        <tr>
+                            <td>本月交易订单数量</td>
+                            <td>5283 件</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+        <div class="bottom_center fl">
+            <div class="bottom_2 fl">
+                <div class="t_line_box">
+                    <i class="t_l_line"></i> 
+                    <i class="l_t_line"></i> 
+                </div> 
+                <div class="t_line_box">
+                    <i class="t_r_line"></i> 
+                    <i class="r_t_line"></i> 
+                </div> 
+                <div class="t_line_box">
+                    <i class="l_b_line"></i> 
+                    <i class="b_l_line"></i> 
+                </div> 
+                    <div class="t_line_box">
+                    <i class="r_b_line"></i> 
+                    <i class="b_r_line"></i> 
+                </div>
+                <div class="main_title" style="width:300px;left:40%;">
+                    <img src="picture/t_7.png" alt="">
+                    广西电子商务热销产品排行榜
+                </div>
+                <div class="main_table t_btn8">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>产品名称</th>
+                            <th>品种</th>
+                            <th>产地</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>荔浦百香果</td>
+                            <td>百香果</td>
+                            <td>荔浦</td>
+                        </tr>
+                        <tr>
+                            <td>荔浦砂糖桔</td>
+                            <td>砂糖桔</td>
+                            <td>荔浦</td>
+                        </tr>
+                        <tr>
+                            <td>90g将军峰小方盒绿茶</td>
+                            <td>中小叶种</td>
+                            <td>广西贺州</td>
+                        </tr>
+                        <tr>
+                            <td>珍珠糯玉米</td>
+                            <td>粮食</td>
+                            <td>忻城县</td>
+                        </tr>
+                        <tr>
+                            <td>桂花红糖</td>
+                            <td>桂花红糖</td>
+                            <td>大新县</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="col">
-             <div class="megamenu-wrap">
-              <h5 class="megamenu-title">fishes</h5>
-              <ul class="megamenu-list">
-               <li><a href="#">scads</a></li>
-               <li><a href="#">pomfret</a></li>
-               <li><a href="#">groupers</a></li>
-               <li><a href="#">anchovy</a></li>
-               <li><a href="#">mackerel</a></li>
-              </ul>
-             </div>
+            <div class="bottom_3 fl">
+                <div class="t_line_box">
+                    <i class="t_l_line"></i> 
+                    <i class="l_t_line"></i> 
+                </div> 
+                <div class="t_line_box">
+                    <i class="t_r_line"></i> 
+                    <i class="r_t_line"></i> 
+                </div> 
+                <div class="t_line_box">
+                    <i class="l_b_line"></i> 
+                    <i class="b_l_line"></i> 
+                </div> 
+                    <div class="t_line_box">
+                    <i class="r_b_line"></i> 
+                    <i class="b_r_line"></i> 
+                </div>
+                <div class="main_title" style="width:260px;left:45%;">
+                    <img src="picture/t_7.png" alt="">
+                   电子商务热销店铺排行榜
+                </div>
+                <div class="main_table t_btn2">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>店铺名称</th>
+                            <th>产品</th>
+                            <th>销售额(月销)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>鲜迪食品专营店</td>
+                            <td>海鸭蛋</td>
+                            <td>2.8万</td>
+                        </tr>
+                        <tr>
+                            <td>中鼎水果专营店</td>
+                            <td>红心芭乐番石榴</td>
+                            <td>2.5万</td>
+                        </tr>
+                        <tr>
+                            <td>中闽飘香旗舰店</td>
+                            <td>广西桂林罗汉果</td>
+                            <td>2.4万</td>
+                        </tr>
+                        <tr>
+                            <td>芋小妹旗舰店</td>
+                            <td>广西荔浦大芋头</td>
+                            <td>1.3万</td>
+                        </tr>
+                        <tr>
+                            <td>桂甄堂旗舰店</td>
+                            <td>柳州螺狮粉</td>
+                            <td>1.1万</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="col">
-             <div class="megamenu-wrap">
-              <h5 class="megamenu-title">dry foods</h5>
-              <ul class="megamenu-list">
-               <li><a href="#">noodles</a></li>
-               <li><a href="#">Powdered milk</a></li>
-               <li><a href="#">nut &amp; yeast</a></li>
-               <li><a href="#">almonds</a></li>
-               <li><a href="#">pumpkin</a></li>
-              </ul>
-             </div>
+        </div>
+        <div class="bottom_4 fr">
+            <div class="t_line_box">
+                <i class="t_l_line"></i> 
+                <i class="l_t_line"></i> 
+            </div> 
+            <div class="t_line_box">
+                <i class="t_r_line"></i> 
+                <i class="r_t_line"></i> 
+            </div> 
+            <div class="t_line_box">
+                <i class="l_b_line"></i> 
+                <i class="b_l_line"></i> 
+            </div> 
+                <div class="t_line_box">
+                <i class="r_b_line"></i> 
+                <i class="b_r_line"></i> 
             </div>
-           </div>
-          </div>
-         </div></li>
-        <li class="navbar-item dropdown-megamenu"><a class="navbar-link dropdown-arrow" href="#">pages</a>
-         <div class="megamenu">
-          <div class="container">
-           <div class="row">
-            <div class="col-lg-3">
-             <div class="megamenu-wrap">
-              <h5 class="megamenu-title">useful pages</h5>
-              <ul class="megamenu-list">
-               <li><a href="profile.html">my profile</a></li>
-               <li><a href="about.html">about us</a></li>
-               <li><a href="contact.html">contact us</a></li>
-               <li><a href="offer.html">offers</a></li>
-               <li><a href="faq.html">faqs</a></li>
-              </ul>
-             </div>
+            <div class="main_title">
+                <img src="picture/t_7.png" alt="">
+                平台活动案例
             </div>
-            <div class="col-lg-3">
-             <div class="megamenu-wrap">
-              <h5 class="megamenu-title">more pages</h5>
-              <ul class="megamenu-list">
-               <li><a href="compare.html">compare</a></li>
-               <li><a href="privacy.html">privacy policy</a></li>
-               <li><a href="coming-soon.html">coming soon</a></li>
-               <li><a href="blank-page.html">blank page</a></li>
-               <li><a href="error.html">404 Error</a></li>
-              </ul>
-             </div>
+            <div class="main_table t_btn3 table_zdy">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>活动主题</th>
+                        <th>活动举办地</th>
+                        <th>日期</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><a target="blank" href="http://www.gxitps.org/zhanhui/detail/id/20.html">2018广西特产行销全国</a></td>
+                        <td>南宁</td>
+                        <td>2018年</td>
+                    </tr>
+                    <tr>
+                        <td><a target="blank" href="http://www.gxitps.org/zhanhui/detail/id/16.html">2018壮族三月三电商节</a></td>
+                        <td>南宁</td>
+                        <td>2018年</td>
+                    </tr>
+                    <tr>
+                        <td><a target="blank" href="http://www.gxitps.org/zhanhui/detail/id/17.html">2018灵山荔枝节</a></td>
+                        <td>灵山县</td>
+                        <td>2018年</td>
+                    </tr>
+                    <tr>
+                        <td>2018年货节</td>
+                        <td>广西</td>
+                        <td>2018年</td>
+                    </tr>
+                    <tr>
+                        <td>2017好讲师大赛</td>
+                        <td>南宁</td>
+                        <td>2017年</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="col-lg-3">
-             <div class="megamenu-wrap">
-              <h5 class="megamenu-title">user action</h5>
-              <ul class="megamenu-list">
-               <li><a href="wishlist.html">wishlist</a></li>
-               <li><a href="checkout.html">checkout</a></li>
-               <li><a href="orderlist.html">order history</a></li>
-               <li><a href="invoice.html">order invoice</a></li>
-              </ul>
-             </div>
-            </div>
-            <div class="col-lg-3">
-             <div class="megamenu-promo">
-              <a href="#"><img src="static/picture/01.jpg" alt="promo" /></a>
-             </div>
-            </div>
-           </div>
-          </div>
-         </div></li>
-        <li class="navbar-item dropdown"><a class="navbar-link dropdown-arrow" href="#">authentic</a>
-         <ul class="dropdown-position-list">
-          <li><a href="login.html">login</a></li>
-          <li><a href="register.html">register</a></li>
-          <li><a href="reset.html">reset password</a></li>
-          <li><a href="change.html">change password</a></li>
-         </ul></li>
-        <li class="navbar-item dropdown"><a class="navbar-link dropdown-arrow" href="#">blogs</a>
-         <ul class="dropdown-position-list">
-          <li><a href="blog-grid.html">blog grid</a></li>
-          <li><a href="blog-standard.html">blog standard</a></li>
-          <li><a href="blog-details.html">blog details</a></li>
-         </ul></li>
-       </ul>
-       <div class="navbar-info-group">
-        <div class="navbar-info">
-         <i class="icofont-ui-touch-phone"></i>
-         <p><small>call us</small><span>(+880) 183 8288 389</span></p>
         </div>
-        <div class="navbar-info">
-         <i class="icofont-ui-email"></i>
-         <p><small>email us</small><span>support@organe.com</span></p>
-        </div>
-       </div>
-      </div>
-     </div>
     </div>
-   </div>
-  </nav>
-  <aside class="category-part">
-   <div class="category-container">
-    <div class="category-header">
-     <a href="#"><img src="static/picture/logo.png" alt="logo" /></a>
-     <button class="category-close"><i class="icofont-close"></i></button>
-    </div>
-    <ul class="category-list">
-     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-vegetable"></i>vegetables</a>
-      <ul class="dropdown-list">
-       <li><a href="#">asparagus</a></li>
-       <li><a href="#">broccoli</a></li>
-       <li><a href="#">carrot</a></li>
-      </ul></li>
-     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-groceries"></i>groceries</a>
-      <ul class="dropdown-list">
-       <li><a href="#">Grains &amp; Bread</a></li>
-       <li><a href="#">Dairy &amp; Eggs</a></li>
-       <li><a href="#">Oil &amp; Fat</a></li>
-      </ul></li>
-     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-fruit"></i>fruits</a>
-      <ul class="dropdown-list">
-       <li><a href="#">Apple</a></li>
-       <li><a href="#">Orange</a></li>
-       <li><a href="#">Strawberry</a></li>
-      </ul></li>
-     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-dairy-products"></i>dairy farm</a>
-      <ul class="dropdown-list">
-       <li><a href="#">Egg</a></li>
-       <li><a href="#">milk</a></li>
-       <li><a href="#">butter</a></li>
-      </ul></li>
-     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-crab"></i>sea foods</a>
-      <ul class="dropdown-list">
-       <li><a href="#">Lobster</a></li>
-       <li><a href="#">Octopus</a></li>
-       <li><a href="#">Shrimp</a></li>
-      </ul></li>
-     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-salad"></i>diet foods</a>
-      <ul class="dropdown-list">
-       <li><a href="#">Salmon</a></li>
-       <li><a href="#">Potatoes</a></li>
-       <li><a href="#">Greens</a></li>
-      </ul></li>
-     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-dried-fruit"></i>dry foods</a>
-      <ul class="dropdown-list">
-       <li><a href="#">noodles</a></li>
-       <li><a href="#">Powdered milk</a></li>
-       <li><a href="#">nut &amp; yeast</a></li>
-      </ul></li>
-     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-fast-food"></i>fast foods</a>
-      <ul class="dropdown-list">
-       <li><a href="#">mango</a></li>
-       <li><a href="#">plumsor</a></li>
-       <li><a href="#">raisins</a></li>
-      </ul></li>
-     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-cheers"></i>drinks</a>
-      <ul class="dropdown-list">
-       <li><a href="#">Wine</a></li>
-       <li><a href="#">Juice</a></li>
-       <li><a href="#">Water</a></li>
-      </ul></li>
-     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-beverage"></i>coffee</a>
-      <ul class="dropdown-list">
-       <li><a href="#">Cappuchino</a></li>
-       <li><a href="#">Espresso</a></li>
-       <li><a href="#">Latte</a></li>
-      </ul></li>
-     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-barbecue"></i>meats</a>
-      <ul class="dropdown-list">
-       <li><a href="#">Meatball</a></li>
-       <li><a href="#">Sausage</a></li>
-       <li><a href="#">Poultry</a></li>
-      </ul></li>
-     <li><a class="cate-link dropdown-link" href="#"><i class="flaticon-fish"></i>fishes</a>
-      <ul class="dropdown-list">
-       <li><a href="#">Agujjim</a></li>
-       <li><a href="#">saltfish</a></li>
-       <li><a href="#">pazza</a></li>
-      </ul></li>
-    </ul>
-    <div class="category-footer">
-     <p>All Rights Reserved by <a href="#">Mironcoder</a></p>
-    </div>
-   </div>
-  </aside>
-  <aside class="cart-part">
-   <div class="cart-container">
-    <div class="cart-header">
-     <div class="cart-total">
-      <i class="icofont-shopping-cart"></i>
-      <span>total item (5)</span>
-     </div>
-     <button class="cart-close"><i class="icofont-close"></i></button>
-    </div>
-    <ul class="cart-list">
-     <li class="cart-item">
-      <div class="cart-media">
-       <a href="#"><img src="static/picture/01.jpg" alt="product" /></a>
-       <button class="cart-delete"><i class="icofont-bin"></i></button>
-      </div>
-      <div class="cart-info-group">
-       <div class="cart-info">
-        <h6><a href="product-single.html">existing product name</a></h6>
-        <p>Unit Price - $8.75</p>
-       </div>
-       <div class="cart-action-group">
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-        <h6>$56.98</h6>
-       </div>
-      </div></li>
-     <li class="cart-item">
-      <div class="cart-media">
-       <a href="#"><img src="static/picture/02.jpg" alt="product" /></a>
-       <button class="cart-delete"><i class="icofont-bin"></i></button>
-      </div>
-      <div class="cart-info-group">
-       <div class="cart-info">
-        <h6><a href="product-single.html">existing product name</a></h6>
-        <p>Unit Price - $8.75</p>
-       </div>
-       <div class="cart-action-group">
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-        <h6>$56.98</h6>
-       </div>
-      </div></li>
-     <li class="cart-item">
-      <div class="cart-media">
-       <a href="#"><img src="static/picture/03.jpg" alt="product" /></a>
-       <button class="cart-delete"><i class="icofont-bin"></i></button>
-      </div>
-      <div class="cart-info-group">
-       <div class="cart-info">
-        <h6><a href="product-single.html">existing product name</a></h6>
-        <p>Unit Price - $8.75</p>
-       </div>
-       <div class="cart-action-group">
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-        <h6>$56.98</h6>
-       </div>
-      </div></li>
-     <li class="cart-item">
-      <div class="cart-media">
-       <a href="#"><img src="static/picture/04.jpg" alt="product" /></a>
-       <button class="cart-delete"><i class="icofont-bin"></i></button>
-      </div>
-      <div class="cart-info-group">
-       <div class="cart-info">
-        <h6><a href="product-single.html">existing product name</a></h6>
-        <p>Unit Price - $8.75</p>
-       </div>
-       <div class="cart-action-group">
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-        <h6>$56.98</h6>
-       </div>
-      </div></li>
-     <li class="cart-item">
-      <div class="cart-media">
-       <a href="#"><img src="static/picture/05.jpg" alt="product" /></a>
-       <button class="cart-delete"><i class="icofont-bin"></i></button>
-      </div>
-      <div class="cart-info-group">
-       <div class="cart-info">
-        <h6><a href="product-single.html">existing product name</a></h6>
-        <p>Unit Price - $8.75</p>
-       </div>
-       <div class="cart-action-group">
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-        <h6>$56.98</h6>
-       </div>
-      </div></li>
-    </ul>
-    <div class="cart-footer">
-     <button class="coupon-btn">Do you have a coupon code?</button>
-     <form class="coupon-form">
-      <input type="text" placeholder="Enter your coupon code" />
-      <button type="submit"><span>apply</span></button>
-     </form>
-     <a class="cart-checkout-btn" href="checkout.html"><span class="checkout-label">Proceed to Checkout</span><span class="checkout-price">$369.78</span></a>
-    </div>
-   </div>
-  </aside>
-  <aside class="mobile-nav">
-   <div class="nav-container">
-    <div class="nav-header">
-     <a href="#"><img src="static/picture/logo.png" alt="logo" /></a>
-     <button class="nav-close"><i class="icofont-close"></i></button>
-    </div>
-    <div class="nav-content">
-     <div class="nav-profile">
-      <a class="nav-user" href="#"><img src="static/picture/user.png" alt="user" /></a>
-      <h4 class="nav-name"><a href="login.html">join here</a></h4>
-     </div>
-     <div class="nav-select-group">
-      <div class="nav-select">
-       <i class="icofont-world"></i>
-       <select class="select"><option value="english" selected="">English</option><option value="bangali">Bangali</option><option value="arabic">Arabic</option></select>
-      </div>
-      <div class="nav-select">
-       <i class="icofont-money"></i>
-       <select class="select"><option value="english" selected="">Doller</option><option value="bangali">Pound</option><option value="arabic">Taka</option></select>
-      </div>
-     </div>
-     <ul class="nav-list">
-      <li><a class="nav-link dropdown-link" href="#"><i class="icofont-home"></i>Home</a>
-       <ul class="dropdown-list">
-        <li><a href="index.html">Home index</a></li>
-        <li><a href="home-grid.html">Home grid</a></li>
-        <li><a href="home-classic.html">Home classic</a></li>
-        <li><a href="home-category.html">Home category</a></li>
-       </ul></li>
-      <li><a class="nav-link dropdown-link" href="#"><i class="icofont-food-cart"></i>shop</a>
-       <ul class="dropdown-list">
-        <li><a href="shop-grid.html">shop grid</a></li>
-        <li><a href="shop-standard.html">shop standard</a></li>
-        <li><a href="product-details.html">product details</a></li>
-       </ul></li>
-      <li><a class="nav-link dropdown-link" href="#"><i class="icofont-page"></i>pages</a>
-       <ul class="dropdown-list">
-        <li><a href="faq.html">faqs</a></li>
-        <li><a href="offer.html">offers</a></li>
-        <li><a href="about.html">about us</a></li>
-        <li><a href="contact.html">contact us</a></li>
-        <li><a href="blank-page.html">blank page</a></li>
-        <li><a href="privacy.html">privacy policy</a></li>
-        <li><a href="coming-soon.html">coming soon</a></li>
-        <li><a href="error.html">404 Error</a></li>
-       </ul></li>
-      <li><a class="nav-link dropdown-link" href="#"><i class="icofont-bag-alt"></i>my account</a>
-       <ul class="dropdown-list">
-        <li><a href="profile.html">profile</a></li>
-        <li><a href="wishlist.html">wishlist</a></li>
-        <li><a href="compare.html">compare</a></li>
-        <li><a href="checkout.html">checkout</a></li>
-        <li><a href="orderlist.html">order history</a></li>
-        <li><a href="invoice.html">order invoice</a></li>
-       </ul></li>
-      <li><a class="nav-link dropdown-link" href="#"><i class="icofont-lock"></i>authentic</a>
-       <ul class="dropdown-list">
-        <li><a href="login.html">login</a></li>
-        <li><a href="register.html">register</a></li>
-        <li><a href="reset.html">reset password</a></li>
-        <li><a href="change.html">change password</a></li>
-       </ul></li>
-      <li><a class="nav-link dropdown-link" href="#"><i class="icofont-book-alt"></i>blogs</a>
-       <ul class="dropdown-list">
-        <li><a href="blog-grid.html">blog grid</a></li>
-        <li><a href="blog-standard.html">blog standard</a></li>
-        <li><a href="blog-details.html">blog details</a></li>
-       </ul></li>
-      <li><a class="nav-link" href="offer.html"><i class="icofont-sale-discount"></i>offers</a></li>
-      <li><a class="nav-link" href="profile.html"><i class="icofont-user-alt-3"></i>profile</a></li>
-      <li><a class="nav-link" href="wishlist.html"><i class="icofont-heart"></i>wishlist</a></li>
-      <li><a class="nav-link" href="checkout.html"><i class="icofont-checked"></i>checkout</a></li>
-      <li><a class="nav-link" href="orderlist.html"><i class="icofont-settings"></i>order history</a></li>
-      <li><a class="nav-link" href="faq.html"><i class="icofont-question-circle"></i>need help</a></li>
-      <li><a class="nav-link" href="contact.html"><i class="icofont-contacts"></i>contact us</a></li>
-      <li><a class="nav-link" href="login.html"><i class="icofont-logout"></i>logout</a></li>
-     </ul>
-     <div class="nav-info-group">
-      <div class="nav-info">
-       <i class="icofont-ui-touch-phone"></i>
-       <p><small>call us</small><span>(+880) 183 8288 389</span></p>
-      </div>
-      <div class="nav-info">
-       <i class="icofont-ui-email"></i>
-       <p><small>email us</small><span>support@organe.com</span></p>
-      </div>
-     </div>
-     <div class="nav-footer">
-      <p>All Rights Reserved by <a href="#">Mironcoder</a></p>
-     </div>
-    </div>
-   </div>
-  </aside>
-  <menu class="mobile-menu">
-   <a href="index.html" title="Home Page"><i class="icofont-ui-home"></i><span>Home</span></a>
-   <button class="cate-btn" title="Category List"><i class="icofont-listine-dots"></i><span>category</span></button>
-   <button class="cart-btn" title="Cartlist"><i class="icofont-shopping-cart"></i><span>cartlist</span><sup>9+</sup></button>
-   <a href="wishlist.html" title="Wishlist"><i class="icofont-ui-love"></i><span>wishlist</span><sup>0</sup></a>
-   <a href="compare.html" title="Compare List"><i class="icofont-ui-rotation"></i><span>compare</span><sup>0</sup></a>
-  </menu>
-  <div class="modal fade" id="product-view">
-   <div class="modal-dialog">
-    <div class="modal-content">
-     <button class="modal-close icofont-close" data-bs-dismiss="modal"></button>
-     <div class="product-view">
-      <div class="row">
-       <div class="col-md-6 col-lg-6">
-        <div class="view-gallery">
-         <div class="view-label-group">
-          <label class="view-label new">new</label>
-          <label class="view-label off">-10%</label>
-         </div>
-         <ul class="preview-slider slider-arrow">
-          <li><img src="static/picture/01.jpg" alt="product" /></li>
-          <li><img src="static/picture/01.jpg" alt="product" /></li>
-          <li><img src="static/picture/01.jpg" alt="product" /></li>
-          <li><img src="static/picture/01.jpg" alt="product" /></li>
-          <li><img src="static/picture/01.jpg" alt="product" /></li>
-          <li><img src="static/picture/01.jpg" alt="product" /></li>
-          <li><img src="static/picture/01.jpg" alt="product" /></li>
-         </ul>
-         <ul class="thumb-slider">
-          <li><img src="static/picture/01.jpg" alt="product" /></li>
-          <li><img src="static/picture/01.jpg" alt="product" /></li>
-          <li><img src="static/picture/01.jpg" alt="product" /></li>
-          <li><img src="static/picture/01.jpg" alt="product" /></li>
-          <li><img src="static/picture/01.jpg" alt="product" /></li>
-          <li><img src="static/picture/01.jpg" alt="product" /></li>
-          <li><img src="static/picture/01.jpg" alt="product" /></li>
-         </ul>
-        </div>
-       </div>
-       <div class="col-md-6 col-lg-6">
-        <div class="view-details">
-         <h3 class="view-name"><a href="product-details.html">existing product name</a></h3>
-         <div class="view-meta">
-          <p>SKU:<span>1234567</span></p>
-          <p>BRAND:<a href="#">radhuni</a></p>
-         </div>
-         <div class="view-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3 reviews)</a>
-         </div>
-         <h3 class="view-price">
-          <del>
-           $38.00
-          </del><span>$24.00<small>/per kilo</small></span></h3>
-         <p class="view-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit non tempora magni repudiandae sint suscipit tempore quis maxime explicabo veniam eos reprehenderit fuga</p>
-         <div class="view-list-group">
-          <label class="view-list-title">tags:</label>
-          <ul class="view-tag-list">
-           <li><a href="#">organic</a></li>
-           <li><a href="#">vegetable</a></li>
-           <li><a href="#">chilis</a></li>
-          </ul>
-         </div>
-         <div class="view-list-group">
-          <label class="view-list-title">Share:</label>
-          <ul class="view-share-list">
-           <li><a href="#" class="icofont-facebook" title="Facebook"></a></li>
-           <li><a href="#" class="icofont-twitter" title="Twitter"></a></li>
-           <li><a href="#" class="icofont-linkedin" title="Linkedin"></a></li>
-           <li><a href="#" class="icofont-instagram" title="Instagram"></a></li>
-          </ul>
-         </div>
-         <div class="view-add-group">
-          <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add to cart</span></button>
-          <div class="product-action">
-           <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-           <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-           <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-          </div>
-         </div>
-         <div class="view-action-group">
-          <a class="view-wish wish" href="#" title="Add Your Wishlist"><i class="icofont-heart"></i><span>add to wish</span></a>
-          <a class="view-compare" href="compare.html" title="Compare This Item"><i class="icofont-ui-rotation"></i><span>Compare This</span></a>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-  </div>
-  <section class="home-index-slider slider-arrow slider-dots">
-   <div class="banner-part banner-1">
-    <div class="container">
-     <div class="row align-items-center">
-      <div class="col-md-6 col-lg-6">
-       <div class="banner-content">
-        <h1>free home delivery within 24 hours now.</h1>
-        <p>Lorem ipsum dolor consectetur adipisicing elit modi consequatur eaque expedita porro necessitatibus eveniet voluptatum quis pariatur Laboriosam molestiae architecto excepturi</p>
-        <div class="banner-btn">
-         <a class="btn btn-inline" href="shop-grid.html"><i class="icofont-shopping-cart"></i><span>shop now</span></a>
-         <a class="btn btn-outline" href="offer.html"><i class="icofont-sale-discount"></i><span>get offer</span></a>
-        </div>
-       </div>
-      </div>
-      <div class="col-md-6 col-lg-6">
-       <div class="banner-img">
-        <img src="static/picture/01.png" alt="index" />
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-   <div class="banner-part banner-2">
-    <div class="container">
-     <div class="row align-items-center">
-      <div class="col-md-6 col-lg-6">
-       <div class="banner-img">
-        <img src="static/picture/02.png" alt="index" />
-       </div>
-      </div>
-      <div class="col-md-6 col-lg-6">
-       <div class="banner-content">
-        <h1>free home delivery within 24 hours now.</h1>
-        <p>Lorem ipsum dolor consectetur adipisicing elit modi consequatur eaque expedita porro necessitatibus eveniet voluptatum quis pariatur Laboriosam molestiae architecto excepturi</p>
-        <div class="banner-btn">
-         <a class="btn btn-inline" href="shop-grid.html"><i class="icofont-shopping-cart"></i><span>shop now</span></a>
-         <a class="btn btn-outline" href="offer.html"><i class="icofont-sale-discount"></i><span>get offer</span></a>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <section class="section suggest-part">
-   <div class="container">
-    <ul class="suggest-slider slider-arrow">
-     <li><a class="suggest-card" href="shop-grid.html"><img src="static/picture/01.jpg" alt="suggest" /><h5>vegetables <span>34 items</span></h5></a></li>
-     <li><a class="suggest-card" href="shop-grid.html"><img src="static/picture/02.jpg" alt="suggest" /><h5>fruits <span>89 items</span></h5></a></li>
-     <li><a class="suggest-card" href="shop-grid.html"><img src="static/picture/03.jpg" alt="suggest" /><h5>groceries <span>45 items</span></h5></a></li>
-     <li><a class="suggest-card" href="shop-grid.html"><img src="static/picture/04.jpg" alt="suggest" /><h5>dairy farm <span>83 items</span></h5></a></li>
-     <li><a class="suggest-card" href="shop-grid.html"><img src="static/picture/05.jpg" alt="suggest" /><h5>sea foods <span>40 items</span></h5></a></li>
-     <li><a class="suggest-card" href="shop-grid.html"><img src="static/picture/06.jpg" alt="suggest" /><h5>vegan foods <span>57 items</span></h5></a></li>
-     <li><a class="suggest-card" href="shop-grid.html"><img src="static/picture/07.jpg" alt="suggest" /><h5>dry foods <span>23 items</span></h5></a></li>
-     <li><a class="suggest-card" href="shop-grid.html"><img src="static/picture/08.jpg" alt="suggest" /><h5>fast foods <span>97 items</span></h5></a></li>
-    </ul>
-   </div>
-  </section>
-  <section class="section recent-part">
-   <div class="container">
-    <div class="row">
-     <div class="col-lg-12">
-      <div class="section-heading">
-       <h2>recently sold items</h2>
-      </div>
-     </div>
-    </div>
-    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-     <div class="col">
-      <div class="product-card">
-       <div class="product-media">
-        <div class="product-label">
-         <label class="label-text sale">sale</label>
-        </div>
-        <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-        <a class="product-image" href="product-details.html"><img src="static/picture/01.jpg" alt="product" /></a>
-        <div class="product-widget">
-         <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-         <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-         <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-        </div>
-       </div>
-       <div class="product-content">
-        <div class="product-rating">
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="icofont-star"></i>
-         <a href="product-details.html">(3)</a>
-        </div>
-        <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-        <h6 class="product-price">
-         <del>
-          $34
-         </del><span>$28<small>/piece</small></span></h6>
-        <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="col">
-      <div class="product-card">
-       <div class="product-media">
-        <div class="product-label">
-         <label class="label-text sale">sale</label>
-         <label class="label-text new">new</label>
-        </div>
-        <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-        <a class="product-image" href="product-details.html"><img src="static/picture/02.jpg" alt="product" /></a>
-        <div class="product-widget">
-         <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-         <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-         <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-        </div>
-       </div>
-       <div class="product-content">
-        <div class="product-rating">
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="icofont-star"></i>
-         <a href="product-details.html">(3)</a>
-        </div>
-        <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-        <h6 class="product-price">
-         <del>
-          $34
-         </del><span>$28<small>/piece</small></span></h6>
-        <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="col">
-      <div class="product-card">
-       <div class="product-media">
-        <div class="product-label">
-         <label class="label-text sale">sale</label>
-        </div>
-        <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-        <a class="product-image" href="product-details.html"><img src="static/picture/03.jpg" alt="product" /></a>
-        <div class="product-widget">
-         <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-         <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-         <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-        </div>
-       </div>
-       <div class="product-content">
-        <div class="product-rating">
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="icofont-star"></i>
-         <a href="product-details.html">(3)</a>
-        </div>
-        <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-        <h6 class="product-price">
-         <del>
-          $34
-         </del><span>$28<small>/piece</small></span></h6>
-        <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="col">
-      <div class="product-card">
-       <div class="product-media">
-        <div class="product-label">
-         <label class="label-text sale">sale</label>
-        </div>
-        <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-        <a class="product-image" href="product-details.html"><img src="static/picture/04.jpg" alt="product" /></a>
-        <div class="product-widget">
-         <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-         <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-         <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-        </div>
-       </div>
-       <div class="product-content">
-        <div class="product-rating">
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="icofont-star"></i>
-         <a href="product-details.html">(3)</a>
-        </div>
-        <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-        <h6 class="product-price">
-         <del>
-          $34
-         </del><span>$28<small>/piece</small></span></h6>
-        <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="col">
-      <div class="product-card">
-       <div class="product-media">
-        <div class="product-label">
-         <label class="label-text sale">sale</label>
-        </div>
-        <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-        <a class="product-image" href="product-details.html"><img src="static/picture/05.jpg" alt="product" /></a>
-        <div class="product-widget">
-         <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-         <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-         <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-        </div>
-       </div>
-       <div class="product-content">
-        <div class="product-rating">
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="icofont-star"></i>
-         <a href="product-details.html">(3)</a>
-        </div>
-        <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-        <h6 class="product-price">
-         <del>
-          $34
-         </del><span>$28<small>/piece</small></span></h6>
-        <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="col">
-      <div class="product-card">
-       <div class="product-media">
-        <div class="product-label">
-         <label class="label-text sale">sale</label>
-        </div>
-        <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-        <a class="product-image" href="product-details.html"><img src="static/picture/06.jpg" alt="product" /></a>
-        <div class="product-widget">
-         <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-         <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-         <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-        </div>
-       </div>
-       <div class="product-content">
-        <div class="product-rating">
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="icofont-star"></i>
-         <a href="product-details.html">(3)</a>
-        </div>
-        <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-        <h6 class="product-price">
-         <del>
-          $34
-         </del><span>$28<small>/piece</small></span></h6>
-        <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="col">
-      <div class="product-card">
-       <div class="product-media">
-        <div class="product-label">
-         <label class="label-text sale">sale</label>
-        </div>
-        <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-        <a class="product-image" href="product-details.html"><img src="static/picture/07.jpg" alt="product" /></a>
-        <div class="product-widget">
-         <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-         <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-         <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-        </div>
-       </div>
-       <div class="product-content">
-        <div class="product-rating">
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="icofont-star"></i>
-         <a href="product-details.html">(3)</a>
-        </div>
-        <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-        <h6 class="product-price">
-         <del>
-          $34
-         </del><span>$28<small>/piece</small></span></h6>
-        <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="col">
-      <div class="product-card">
-       <div class="product-media">
-        <div class="product-label">
-         <label class="label-text sale">sale</label>
-        </div>
-        <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-        <a class="product-image" href="product-details.html"><img src="static/picture/08.jpg" alt="product" /></a>
-        <div class="product-widget">
-         <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-         <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-         <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-        </div>
-       </div>
-       <div class="product-content">
-        <div class="product-rating">
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="icofont-star"></i>
-         <a href="product-details.html">(3)</a>
-        </div>
-        <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-        <h6 class="product-price">
-         <del>
-          $34
-         </del><span>$28<small>/piece</small></span></h6>
-        <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="col">
-      <div class="product-card">
-       <div class="product-media">
-        <div class="product-label">
-         <label class="label-text sale">sale</label>
-        </div>
-        <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-        <a class="product-image" href="product-details.html"><img src="static/picture/09.jpg" alt="product" /></a>
-        <div class="product-widget">
-         <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-         <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-         <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-        </div>
-       </div>
-       <div class="product-content">
-        <div class="product-rating">
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="icofont-star"></i>
-         <a href="product-details.html">(3)</a>
-        </div>
-        <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-        <h6 class="product-price">
-         <del>
-          $34
-         </del><span>$28<small>/piece</small></span></h6>
-        <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="col">
-      <div class="product-card">
-       <div class="product-media">
-        <div class="product-label">
-         <label class="label-text sale">sale</label>
-        </div>
-        <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-        <a class="product-image" href="product-details.html"><img src="static/picture/10.jpg" alt="product" /></a>
-        <div class="product-widget">
-         <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-         <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-         <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-        </div>
-       </div>
-       <div class="product-content">
-        <div class="product-rating">
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="icofont-star"></i>
-         <a href="product-details.html">(3)</a>
-        </div>
-        <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-        <h6 class="product-price">
-         <del>
-          $34
-         </del><span>$28<small>/piece</small></span></h6>
-        <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="row">
-     <div class="col-lg-12">
-      <div class="section-btn-25">
-       <a href="shop-grid.html" class="btn btn-outline"><i class="icofont-eye-alt"></i><span>show more</span></a>
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <div class="section promo-part">
-   <div class="container">
-    <div class="row">
-     <div class="col-lg-12">
-      <div class="promo-img">
-       <a href=""><img src="static/picture/03.jpg" alt="promo" /></a>
-      </div>
-     </div>
-    </div>
-   </div>
-  </div>
-  <section class="section feature-part">
-   <div class="container">
-    <div class="row">
-     <div class="col-lg-12">
-      <div class="section-heading">
-       <h2>our featured items</h2>
-      </div>
-     </div>
-    </div>
-    <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2">
-     <div class="col">
-      <div class="feature-card">
-       <div class="feature-media">
-        <div class="feature-label">
-         <label class="label-text feat">feature</label>
-        </div>
-        <button class="feature-wish wish"><i class="icofont-ui-love"></i></button>
-        <a class="feature-image" href="product-details.html"><img src="static/picture/09.jpg" alt="product" /></a>
-        <div class="feature-widget">
-         <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-         <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-         <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-        </div>
-       </div>
-       <div class="feature-content">
-        <h6 class="feature-name"><a href="product-details.html">fresh organic green chilis</a></h6>
-        <div class="feature-rating">
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="icofont-star"></i>
-         <a href="product-details.html">(3 Reviews)</a>
-        </div>
-        <h6 class="feature-price">
-         <del>
-          $34
-         </del><span>$28<small>/piece</small></span></h6>
-        <p class="feature-desc">Lorem ipsum dolor sit consectetur adipisicing xpedita dicta amet olor ut eveniet commodi...</p>
-        <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="col">
-      <div class="feature-card">
-       <div class="feature-media">
-        <div class="feature-label">
-         <label class="label-text feat">feature</label>
-        </div>
-        <button class="feature-wish wish"><i class="icofont-ui-love"></i></button>
-        <a class="feature-image" href="product-details.html"><img src="static/picture/10.jpg" alt="product" /></a>
-        <div class="feature-widget">
-         <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-         <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-         <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-        </div>
-       </div>
-       <div class="feature-content">
-        <h6 class="feature-name"><a href="product-details.html">fresh organic green chilis</a></h6>
-        <div class="feature-rating">
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="icofont-star"></i>
-         <a href="product-details.html">(3 Reviews)</a>
-        </div>
-        <h6 class="feature-price">
-         <del>
-          $34
-         </del><span>$28<small>/piece</small></span></h6>
-        <p class="feature-desc">Lorem ipsum dolor sit consectetur adipisicing xpedita dicta amet olor ut eveniet commodi...</p>
-        <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="col">
-      <div class="feature-card">
-       <div class="feature-media">
-        <div class="feature-label">
-         <label class="label-text feat">feature</label>
-        </div>
-        <button class="feature-wish wish"><i class="icofont-ui-love"></i></button>
-        <a class="feature-image" href="product-details.html"><img src="static/picture/11.jpg" alt="product" /></a>
-        <div class="feature-widget">
-         <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-         <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-         <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-        </div>
-       </div>
-       <div class="feature-content">
-        <h6 class="feature-name"><a href="product-details.html">fresh organic green chilis</a></h6>
-        <div class="feature-rating">
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="icofont-star"></i>
-         <a href="product-details.html">(3 Reviews)</a>
-        </div>
-        <h6 class="feature-price">
-         <del>
-          $34
-         </del><span>$28<small>/piece</small></span></h6>
-        <p class="feature-desc">Lorem ipsum dolor sit consectetur adipisicing xpedita dicta amet olor ut eveniet commodi...</p>
-        <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="col">
-      <div class="feature-card">
-       <div class="feature-media">
-        <div class="feature-label">
-         <label class="label-text feat">feature</label>
-        </div>
-        <button class="feature-wish wish"><i class="icofont-ui-love"></i></button>
-        <a class="feature-image" href="product-details.html"><img src="static/picture/12.jpg" alt="product" /></a>
-        <div class="feature-widget">
-         <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-         <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-         <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-        </div>
-       </div>
-       <div class="feature-content">
-        <h6 class="feature-name"><a href="product-details.html">fresh organic green chilis</a></h6>
-        <div class="feature-rating">
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="icofont-star"></i>
-         <a href="product-details.html">(3 Reviews)</a>
-        </div>
-        <h6 class="feature-price">
-         <del>
-          $34
-         </del><span>$28<small>/piece</small></span></h6>
-        <p class="feature-desc">Lorem ipsum dolor sit consectetur adipisicing xpedita dicta amet olor ut eveniet commodi...</p>
-        <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="col">
-      <div class="feature-card">
-       <div class="feature-media">
-        <div class="feature-label">
-         <label class="label-text feat">feature</label>
-        </div>
-        <button class="feature-wish wish"><i class="icofont-ui-love"></i></button>
-        <a class="feature-image" href="product-details.html"><img src="static/picture/13.jpg" alt="product" /></a>
-        <div class="feature-widget">
-         <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-         <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-         <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-        </div>
-       </div>
-       <div class="feature-content">
-        <h6 class="feature-name"><a href="product-details.html">fresh organic green chilis</a></h6>
-        <div class="feature-rating">
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="icofont-star"></i>
-         <a href="product-details.html">(3 Reviews)</a>
-        </div>
-        <h6 class="feature-price">
-         <del>
-          $34
-         </del><span>$28<small>/piece</small></span></h6>
-        <p class="feature-desc">Lorem ipsum dolor sit consectetur adipisicing xpedita dicta amet olor ut eveniet commodi...</p>
-        <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="col">
-      <div class="feature-card">
-       <div class="feature-media">
-        <div class="feature-label">
-         <label class="label-text feat">feature</label>
-        </div>
-        <button class="feature-wish wish"><i class="icofont-ui-love"></i></button>
-        <a class="feature-image" href="product-details.html"><img src="static/picture/14.jpg" alt="product" /></a>
-        <div class="feature-widget">
-         <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-         <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-         <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-        </div>
-       </div>
-       <div class="feature-content">
-        <h6 class="feature-name"><a href="product-details.html">fresh organic green chilis</a></h6>
-        <div class="feature-rating">
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="active icofont-star"></i>
-         <i class="icofont-star"></i>
-         <a href="product-details.html">(3 Reviews)</a>
-        </div>
-        <h6 class="feature-price">
-         <del>
-          $34
-         </del><span>$28<small>/piece</small></span></h6>
-        <p class="feature-desc">Lorem ipsum dolor sit consectetur adipisicing xpedita dicta amet olor ut eveniet commodi...</p>
-        <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-        <div class="product-action">
-         <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-         <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-         <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="row">
-     <div class="col-lg-12">
-      <div class="section-btn-25">
-       <a href="shop-grid.html" class="btn btn-outline"><i class="icofont-eye-alt"></i><span>show more</span></a>
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <section class="section countdown-part">
-   <div class="container">
-    <div class="row align-items-center">
-     <div class="col-lg-6 mx-auto">
-      <div class="countdown-content">
-       <h3>special discount offer for vegetable items</h3>
-       <p>Reprehenderit sed quod autem molestiae aut modi minus veritatis iste dolorum suscipit quis voluptatum fugiat mollitia quia minima</p>
-       <div class="countdown-time">
-        <span>00 <small>days</small></span>
-        <span>00 <small>hours</small></span>
-        <span>00 <small>minutes</small></span>
-        <span>00 <small>seconds</small></span>
-       </div>
-       <a href="shop-grid.html" class="btn btn-inline"><i class="icofont-shopping-cart"></i><span>shop now</span></a>
-      </div>
-     </div>
-     <div class="col-lg-1"></div>
-     <div class="col-lg-5">
-      <div class="countdown-img">
-       <img src="static/picture/countdown.png" alt="countdown" />
-       <div class="countdown-off">
-        <span>20%</span>
-        <span>off</span>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <section class="section newitem-part">
-   <div class="container">
-    <div class="row">
-     <div class="col">
-      <div class="section-heading">
-       <h2>collected new items</h2>
-      </div>
-     </div>
-    </div>
-    <div class="row">
-     <div class="col">
-      <ul class="new-slider slider-arrow">
-       <li>
-        <div class="product-card">
-         <div class="product-media">
-          <div class="product-label">
-           <label class="label-text new">new</label>
-          </div>
-          <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-          <a class="product-image" href="product-details.html"><img src="static/picture/15.jpg" alt="product" /></a>
-          <div class="product-widget">
-           <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-           <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-           <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-          </div>
-         </div>
-         <div class="product-content">
-          <div class="product-rating">
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="icofont-star"></i>
-           <a href="product-details.html">(3)</a>
-          </div>
-          <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-          <h6 class="product-price">
-           <del>
-            $34
-           </del><span>$28<small>/piece</small></span></h6>
-          <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-          <div class="product-action">
-           <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-           <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-           <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-          </div>
-         </div>
-        </div></li>
-       <li>
-        <div class="product-card">
-         <div class="product-media">
-          <div class="product-label">
-           <label class="label-text new">new</label>
-          </div>
-          <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-          <a class="product-image" href="product-details.html"><img src="static/picture/16.jpg" alt="product" /></a>
-          <div class="product-widget">
-           <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-           <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-           <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-          </div>
-         </div>
-         <div class="product-content">
-          <div class="product-rating">
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="icofont-star"></i>
-           <a href="product-details.html">(3)</a>
-          </div>
-          <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-          <h6 class="product-price">
-           <del>
-            $34
-           </del><span>$28<small>/piece</small></span></h6>
-          <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-          <div class="product-action">
-           <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-           <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-           <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-          </div>
-         </div>
-        </div></li>
-       <li>
-        <div class="product-card">
-         <div class="product-media">
-          <div class="product-label">
-           <label class="label-text new">new</label>
-          </div>
-          <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-          <a class="product-image" href="product-details.html"><img src="static/picture/17.jpg" alt="product" /></a>
-          <div class="product-widget">
-           <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-           <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-           <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-          </div>
-         </div>
-         <div class="product-content">
-          <div class="product-rating">
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="icofont-star"></i>
-           <a href="product-details.html">(3)</a>
-          </div>
-          <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-          <h6 class="product-price">
-           <del>
-            $34
-           </del><span>$28<small>/piece</small></span></h6>
-          <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-          <div class="product-action">
-           <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-           <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-           <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-          </div>
-         </div>
-        </div></li>
-       <li>
-        <div class="product-card">
-         <div class="product-media">
-          <div class="product-label">
-           <label class="label-text new">new</label>
-          </div>
-          <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-          <a class="product-image" href="product-details.html"><img src="static/picture/18.jpg" alt="product" /></a>
-          <div class="product-widget">
-           <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-           <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-           <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-          </div>
-         </div>
-         <div class="product-content">
-          <div class="product-rating">
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="icofont-star"></i>
-           <a href="product-details.html">(3)</a>
-          </div>
-          <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-          <h6 class="product-price">
-           <del>
-            $34
-           </del><span>$28<small>/piece</small></span></h6>
-          <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-          <div class="product-action">
-           <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-           <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-           <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-          </div>
-         </div>
-        </div></li>
-       <li>
-        <div class="product-card">
-         <div class="product-media">
-          <div class="product-label">
-           <label class="label-text new">new</label>
-          </div>
-          <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-          <a class="product-image" href="product-details.html"><img src="static/picture/19.jpg" alt="product" /></a>
-          <div class="product-widget">
-           <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-           <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-           <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-          </div>
-         </div>
-         <div class="product-content">
-          <div class="product-rating">
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="icofont-star"></i>
-           <a href="product-details.html">(3)</a>
-          </div>
-          <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-          <h6 class="product-price">
-           <del>
-            $34
-           </del><span>$28<small>/piece</small></span></h6>
-          <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-          <div class="product-action">
-           <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-           <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-           <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-          </div>
-         </div>
-        </div></li>
-       <li>
-        <div class="product-card">
-         <div class="product-media">
-          <div class="product-label">
-           <label class="label-text new">new</label>
-          </div>
-          <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-          <a class="product-image" href="product-details.html"><img src="static/picture/20.jpg" alt="product" /></a>
-          <div class="product-widget">
-           <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-           <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-           <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-          </div>
-         </div>
-         <div class="product-content">
-          <div class="product-rating">
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="active icofont-star"></i>
-           <i class="icofont-star"></i>
-           <a href="product-details.html">(3)</a>
-          </div>
-          <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-          <h6 class="product-price">
-           <del>
-            $34
-           </del><span>$28<small>/piece</small></span></h6>
-          <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-          <div class="product-action">
-           <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-           <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-           <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-          </div>
-         </div>
-        </div></li>
-      </ul>
-     </div>
-    </div>
-    <div class="row">
-     <div class="col">
-      <div class="section-btn-25">
-       <a href="shop-grid.html" class="btn btn-outline"><i class="icofont-eye-alt"></i><span>show more</span></a>
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <div class="section promo-part">
-   <div class="container">
-    <div class="row">
-     <div class="col-sm-12 col-md-6 col-lg-6 px-xl-3">
-      <div class="promo-img">
-       <a href=""><img src="static/picture/01.jpg" alt="promo" /></a>
-      </div>
-     </div>
-     <div class="col-sm-12 col-md-6 col-lg-6 px-xl-3">
-      <div class="promo-img">
-       <a href=""><img src="static/picture/02.jpg" alt="promo" /></a>
-      </div>
-     </div>
-    </div>
-   </div>
-  </div>
-  <section class="section niche-part">
-   <div class="container">
-    <div class="row">
-     <div class="col-lg-12">
-      <div class="section-heading">
-       <h2>Browse by Top Niche</h2>
-      </div>
-     </div>
-    </div>
-    <div class="row">
-     <div class="col-lg-12">
-      <ul class="nav nav-tabs">
-       <li><a href="#top-order" class="tab-link active" data-bs-toggle="tab"><i class="icofont-price"></i><span>top order</span></a></li>
-       <li><a href="#top-rate" class="tab-link" data-bs-toggle="tab"><i class="icofont-star"></i><span>top rating</span></a></li>
-       <li><a href="#top-disc" class="tab-link" data-bs-toggle="tab"><i class="icofont-sale-discount"></i><span>top discount</span></a></li>
-      </ul>
-     </div>
-    </div>
-    <div class="tab-pane active" id="top-order">
-     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text order">314</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/01.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text order">314</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/02.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text order">314</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/03.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text order">314</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/04.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text order">314</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/05.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text order">314</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/06.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card product-disable">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text order">314</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/07.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text order">314</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/08.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text order">314</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/09.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text order">314</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/10.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="tab-pane" id="top-rate">
-     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text rate">4.8</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/11.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text rate">4.8</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/12.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text rate">4.8</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/13.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text rate">4.8</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/14.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text rate">4.8</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/15.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text rate">4.8</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/16.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card product-disable">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text rate">4.8</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/17.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text rate">4.8</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/18.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text rate">4.8</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/19.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text rate">4.8</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/20.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="tab-pane" id="top-disc">
-     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text off">-10%</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/06.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text off">-10%</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/07.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text off">-10%</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/08.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text off">-10%</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/09.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text off">-10%</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/10.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text off">-10%</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/11.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text off">-10%</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/12.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text off">-10%</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/13.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text off">-10%</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/14.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="product-card">
-        <div class="product-media">
-         <div class="product-label">
-          <label class="label-text off">-10%</label>
-         </div>
-         <button class="product-wish wish"><i class="icofont-ui-love"></i></button>
-         <a class="product-image" href="product-details.html"><img src="static/picture/15.jpg" alt="product" /></a>
-         <div class="product-widget">
-          <a title="Product Compare" href="compare.html" class="icofont-ui-rotation"></a>
-          <a title="Product Video" href="" class="venobox icofont-ui-play" data-autoplay="true" data-vbtype="video"></a>
-          <a title="Product View" href="#" class="icofont-eye-alt" data-bs-toggle="modal" data-bs-target="#product-view"></a>
-         </div>
-        </div>
-        <div class="product-content">
-         <div class="product-rating">
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="active icofont-star"></i>
-          <i class="icofont-star"></i>
-          <a href="product-details.html">(3)</a>
-         </div>
-         <h6 class="product-name"><a href="product-details.html">fresh green chilis</a></h6>
-         <h6 class="product-price">
-          <del>
-           $34
-          </del><span>$28<small>/piece</small></span></h6>
-         <button class="product-add" title="Add to Cart"><i class="icofont-cart"></i><span>add</span></button>
-         <div class="product-action">
-          <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-          <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1" />
-          <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="row">
-     <div class="col-lg-12">
-      <div class="section-btn-25">
-       <a href="shop-grid.html" class="btn btn-outline"><i class="icofont-eye-alt"></i><span>show more</span></a>
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <section class="section partner-part">
-   <div class="container">
-    <div class="row">
-     <div class="col-12">
-      <div class="section-heading">
-       <h2>our valuable partner</h2>
-      </div>
-     </div>
-     <div class="col-lg-12">
-      <ul class="partner-slider slider-arrow">
-       <li><a href="#"><img src="static/picture/01.png" alt="brand" /></a></li>
-       <li><a href="#"><img src="static/picture/02.png" alt="brand" /></a></li>
-       <li><a href="#"><img src="static/picture/03.png" alt="brand" /></a></li>
-       <li><a href="#"><img src="static/picture/04.png" alt="brand" /></a></li>
-       <li><a href="#"><img src="static/picture/05.png" alt="brand" /></a></li>
-       <li><a href="#"><img src="static/picture/06.png" alt="brand" /></a></li>
-       <li><a href="#"><img src="static/picture/07.png" alt="brand" /></a></li>
-       <li><a href="#"><img src="static/picture/08.png" alt="brand" /></a></li>
-      </ul>
-     </div>
-    </div>
-   </div>
-  </section>
-  <section class="section blog-part">
-   <div class="container">
-    <div class="row">
-     <div class="col-12">
-      <div class="section-heading">
-       <h2>Read our articles</h2>
-      </div>
-     </div>
-    </div>
-    <div class="row">
-     <div class="col-lg-4 col-sm-6">
-      <div class="blog-card">
-       <div class="blog-media">
-        <a class="blog-img" href="#"><img src="static/picture/01.jpg" alt="blog" /></a>
-        <div class="blog-calender">
-         <span class="blog-date">02</span>
-         <span class="blog-month">feb</span>
-        </div>
-       </div>
-       <div class="blog-content">
-        <ul class="blog-meta">
-         <li><i class="icofont-speech-comments"></i><span>05 comments</span></li>
-         <li><i class="icofont-share-boxed"></i><span>02 share</span></li>
-        </ul>
-        <h4 class="blog-title"><a href="blog-details.html">Building Killer Robots Game Sehavior iOS With Fuzzy</a></h4>
-        <a class="blog-btn" href="#"><span>read more</span><i class="icofont-arrow-right"></i></a>
-       </div>
-      </div>
-     </div>
-     <div class="col-lg-4 col-sm-6">
-      <div class="blog-card">
-       <div class="blog-media">
-        <a class="blog-img" href="#"><img src="static/picture/02.jpg" alt="blog" /></a>
-        <div class="blog-calender">
-         <span class="blog-date">02</span>
-         <span class="blog-month">feb</span>
-        </div>
-       </div>
-       <div class="blog-content">
-        <ul class="blog-meta">
-         <li><i class="icofont-speech-comments"></i><span>05 comments</span></li>
-         <li><i class="icofont-share-boxed"></i><span>02 share</span></li>
-        </ul>
-        <h4 class="blog-title"><a href="blog-details.html">Building Killer Robots Game Sehavior iOS With Fuzzy</a></h4>
-        <a class="blog-btn" href="#"><span>read more</span><i class="icofont-arrow-right"></i></a>
-       </div>
-      </div>
-     </div>
-     <div class="col-lg-4">
-      <div class="blog-card">
-       <div class="blog-media">
-        <a class="blog-img" href="#"><img src="static/picture/03.jpg" alt="blog" /></a>
-        <div class="blog-calender">
-         <span class="blog-date">02</span>
-         <span class="blog-month">feb</span>
-        </div>
-       </div>
-       <div class="blog-content">
-        <ul class="blog-meta">
-         <li><i class="icofont-speech-comments"></i><span>05 comments</span></li>
-         <li><i class="icofont-share-boxed"></i><span>02 share</span></li>
-        </ul>
-        <h4 class="blog-title"><a href="blog-details.html">Building Killer Robots Game Sehavior iOS With Fuzzy</a></h4>
-        <a class="blog-btn" href="#"><span>read more</span><i class="icofont-arrow-right"></i></a>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="row">
-     <div class="col-lg-12">
-      <div class="section-btn-25">
-       <a href="blog-grid.html" class="btn btn-outline"><i class="icofont-eye-alt"></i><span>show more</span></a>
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <section class="news-part">
-   <div class="container">
-    <div class="row align-items-center">
-     <div class="col-md-5 col-lg-6 col-xl-7">
-      <div class="news-text">
-       <h2>Get 20% Discount for Subscriber</h2>
-       <p>Lorem ipsum dolor consectetur adipisicing accusantium</p>
-      </div>
-     </div>
-     <div class="col-md-7 col-lg-6 col-xl-5">
-      <form class="news-form">
-       <input type="text" placeholder="Enter Your Email Address" />
-       <button><span><i class="icofont-ui-email"></i>Subscribe</span></button>
-      </form>
-     </div>
-    </div>
-   </div>
-  </section>
-  <section class="visual-part">
-   <div class="container">
-    <div class="row">
-     <div class="col-sm-6 col-lg-3">
-      <div class="visual-wrap">
-       <div class="visual-icon">
-        <i class="icofont-vehicle-delivery-van"></i>
-       </div>
-       <div class="visual-content">
-        <h5>free home delivery</h5>
-        <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
-       </div>
-      </div>
-     </div>
-     <div class="col-sm-6 col-lg-3">
-      <div class="visual-wrap">
-       <div class="visual-icon">
-        <i class="icofont-retweet"></i>
-       </div>
-       <div class="visual-content">
-        <h5>instant return policy</h5>
-        <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
-       </div>
-      </div>
-     </div>
-     <div class="col-sm-6 col-lg-3">
-      <div class="visual-wrap">
-       <div class="visual-icon">
-        <i class="icofont-support"></i>
-       </div>
-       <div class="visual-content">
-        <h5>quick support system</h5>
-        <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
-       </div>
-      </div>
-     </div>
-     <div class="col-sm-6 col-lg-3">
-      <div class="visual-wrap">
-       <div class="visual-icon">
-        <i class="icofont-ssl-security"></i>
-       </div>
-       <div class="visual-content">
-        <h5>secure payment way</h5>
-        <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <footer class="footer-part">
-   <div class="container">
-    <div class="row">
-     <div class="col-sm-6 col-xl-3">
-      <div class="footer-widget">
-       <a class="footer-logo" href="#"><img src="static/picture/logo.png" alt="logo" /></a>
-       <p class="footer-desc">Adipisci asperiores ipsum ipsa repellat consequatur repudiandae quisquam assumenda dolor perspiciatis sit ipsum dolor amet.</p>
-       <ul class="footer-social">
-        <li><a class="icofont-facebook" href="#"></a></li>
-        <li><a class="icofont-twitter" href="#"></a></li>
-        <li><a class="icofont-linkedin" href="#"></a></li>
-        <li><a class="icofont-instagram" href="#"></a></li>
-        <li><a class="icofont-pinterest" href="#"></a></li>
-       </ul>
-      </div>
-     </div>
-     <div class="col-sm-6 col-xl-3">
-      <div class="footer-widget contact">
-       <h3 class="footer-title">contact us</h3>
-       <ul class="footer-contact">
-        <li><i class="icofont-ui-email"></i><p><span>support@organe.com</span><span>carrer@organe.com</span></p></li>
-        <li><i class="icofont-ui-touch-phone"></i><p><span>+120 279 532 13</span><span>+120 279 532 14</span></p></li>
-        <li><i class="icofont-location-pin"></i><p>1Hd- 50, 010 Avenue, NY 90001 United States</p></li>
-       </ul>
-      </div>
-     </div>
-     <div class="col-sm-6 col-xl-3">
-      <div class="footer-widget">
-       <h3 class="footer-title">quick Links</h3>
-       <div class="footer-links">
-        <ul>
-         <li><a href="#">My Account</a></li>
-         <li><a href="#">Order History</a></li>
-         <li><a href="#">Order Tracking</a></li>
-         <li><a href="#">Best Seller</a></li>
-         <li><a href="#">New Arrivals</a></li>
-        </ul>
-        <ul>
-         <li><a href="#">Location</a></li>
-         <li><a href="#">Affiliates</a></li>
-         <li><a href="#">Contact</a></li>
-         <li><a href="#">Carrer</a></li>
-         <li><a href="#">Faq</a></li>
-        </ul>
-       </div>
-      </div>
-     </div>
-     <div class="col-sm-6 col-xl-3">
-      <div class="footer-widget">
-       <h3 class="footer-title">Download App</h3>
-       <p class="footer-desc">Lorem ipsum dolor sit amet tenetur dignissimos ipsum eligendi autem obcaecati minus ducimus totam reprehenderit exercitationem!</p>
-       <div class="footer-app">
-        <a href="#"><img src="static/picture/google-store.png" alt="google" /></a>
-        <a href="#"><img src="static/picture/app-store.png" alt="app" /></a>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="row">
-     <div class="col-12">
-      <div class="footer-bottom">
-       <p class="footer-copytext">Copyright &copy; 2021.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-       <div class="footer-card">
-        <a href="#"><img src="static/picture/01.jpg" alt="payment" /></a>
-        <a href="#"><img src="static/picture/02.jpg" alt="payment" /></a>
-        <a href="#"><img src="static/picture/03.jpg" alt="payment" /></a>
-        <a href="#"><img src="static/picture/04.jpg" alt="payment" /></a>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-  </footer>
-  <script src="static/js/jquery-1.12.4.min.js"></script>
-  <script src="static/js/popper.min.js"></script>
-  <script src="static/js/bootstrap.min.js"></script>
-  <script src="static/js/nice-select.min.js"></script>
-  <script src="static/js/venobox.min.js"></script>
-  <script src="static/js/jquery-ui.js"></script>
-  <script src="static/js/slick.min.js"></script>
-  <script src="static/js/nice-select.js"></script>
-  <script src="static/js/price-range.js"></script>
-  <script src="static/js/accordion.js"></script>
-  <script src="static/js/venobox.js"></script>
-  <script src="static/js/slick.js"></script>
-  <script src="static/js/main.js"></script>
- </body>
+</div>
+</body>
+<script src="scripts/jquery-2.2.1.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/common.js"></script>
+<script src="scripts/echarts.min.js"></script>
+<script src="scripts/datatool.js"></script>
+<script src="scripts/index.js"></script>
+<!-- <script src="scripts/china.js"></script> -->
+<script src="scripts/guangxi.js"></script>
+<script type="text/javascript">
+    var dianshang = [];
+    function get_shuju(){
+        $.ajax({
+            type : "post",
+            async:false,
+            url:"/record/dianshang",
+            data:{},
+            dataType:"json",
+            success:function(res){
+                // console.log(res);
+                // if (res) {
+                    // for (var i = 0; i < res.length; i++) {
+                        dianshang.push(res);
+                    // };
+                // };
+            }
+        })
+        return dianshang;
+    }
+
+    //电商企业入驻情况
+    dianshang = get_shuju();
+    
+    var changedetail = echarts.init(document.getElementById('chart_4'));
+    option = {
+        tooltip: {
+            trigger: 'axis',
+            // formatter: '{b}</br>{a}: {c}</br>{a1}: {c1}'
+        },
+        toolbox: {
+            show:false,
+            feature: {
+                dataView: {show: true, readOnly: false},
+                magicType: {show: true, type: ['line', 'bar']},
+                restore: {show: true},
+                saveAsImage: {show: true}
+            }
+        },
+        legend: {
+            data:['',''],
+            show:false
+        },
+        grid:{
+            top:'18%',
+            right:'5%',
+            bottom:'8%',
+            left:'5%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                data: ['名优企业','技术服务','技术开发','电子商务','网络推广','涉互联网企业'],
+                splitLine:{
+                    show:false,
+                    lineStyle:{
+                        color: '#3c4452'
+                    }
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLabel:{
+                    textStyle:{
+                        color:"#fff"
+                    },
+                    lineStyle:{
+                        color: '#519cff'
+                    },
+                    alignWithLabel: true,
+                    interval:0
+                }
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value',
+                name: '入驻数据',
+                nameTextStyle:{
+                    color:'#fff'
+                },
+                interval: 100000,
+                min: 0,
+                splitLine:{
+                    show:true,
+                    lineStyle:{
+                        color: '#23303f'
+                    }
+                },
+                axisLine: {
+                    show:false,
+                    lineStyle: {
+                        color: '#115372'
+                    }
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLabel:{
+                    textStyle:{
+                        color:"#fff"
+                    },
+                    alignWithLabel: true,
+                    interval:0
+
+                }
+            }
+        ],
+        color:"yellow",
+        series: [
+            {
+                name:'电商企业入驻',
+                type:'bar',
+                data: [dianshang[0][0],dianshang[0][1],dianshang[0][2],dianshang[0][3],dianshang[0][4],dianshang[0][5]],
+                boundaryGap: '45%',
+                barWidth:'40%',
+
+                itemStyle: {
+                    normal: {
+                        color: function(params) {
+                            var colorList = [
+                                '#6bc0fb','#7fec9d','#fedd8b','#ffa597','#84e4dd','#6bc0fb'
+                            ];
+                            return colorList[params.dataIndex]
+                        },label: {
+                            show: true,
+                            position: 'top',
+                            formatter: '{c}'
+                        }
+                    }
+                }
+            }
+        ]
+    };
+    changedetail.setOption(option);
+</script>
 </html>
