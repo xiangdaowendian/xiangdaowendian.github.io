@@ -1,0 +1,283 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 1920px;
+    height: auto;
+    font-family: "微软雅黑";
+    color: #FFF;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 10px;  /*高宽分别对应横竖滚动条的尺寸*/
+    height: auto;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #555;
+}
+
+div{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+a:hover{
+    text-decoration: underline;
+}
+    
+#head{
+    position: fixed;
+    width: 1920px;
+    height: 80px;
+    top: 0px;
+    z-index: 9999;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px #000; 
+    }   
+.logo{
+    float: left;
+    margin-left: 360px;
+    width: 200px;
+    height: 80px;
+    }
+.gav{
+    float: left;
+    width: 200px;
+    height: 100%;
+    color: #000;
+    line-height: 80px;
+    font-size: 24px;
+    text-align: center;
+    }
+.gav:hover{
+    color: #FFF;
+    background: #333;
+    cursor: pointer;
+}
+    
+#bg{
+    position: fixed;
+    z-index: 0;
+    width: 1920px;
+    height: 1080px;
+    top: 0px;
+    background: #111;
+}
+
+#wallerpaper{
+    position: relative;
+    width: 1920px;
+    height: 600px;
+    top: 150px;
+    background: url("../image/wallerpaper.png");
+}
+
+#dec{
+    position: fixed;
+    z-index: 9999;
+    width: 160px;
+    height: 1080px;
+    background: rgba(30,30,30,0.9);
+    transition: width 0.5s;
+}
+#dec:hover{
+    width: 960px;
+    transition: width 0.5s;
+}
+#dec .title{
+    position: absolute;
+    right: 0px;
+    width: 160px;
+    height: 1080px;
+    line-height: 1080px;
+    font-size: 30px;
+    margin-top: 0px;
+}
+.href{
+    position: absolute;
+    width: 800px;
+    height: 300px;
+    top: 100px;
+    right: 175px;
+}
+#dec ul{
+    float: right;
+    width: 200px;
+    height: auto;
+    margin-top: 50px;
+    padding: 30px;
+    border-right: 1px solid #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+#dec li{
+    font-weight: 300;
+    list-style: none;
+    margin-top: 30px;
+}
+
+
+#body{
+    position: relative;
+    z-index: 1;
+    width: 1600px;
+    height: auto;
+    margin: 300px auto 0px;
+}
+
+.title{
+    width: 100%;
+    height: 300px;
+    margin-top: 200px;
+    font-family: Michroma;
+    font-size: 48px;
+    line-height: 300px;
+}
+
+#body .head{
+    width: 100%;
+    height: 500px;
+}
+#body .head .float{
+    float: left;
+    height: 500px;
+    margin-bottom: 10px;
+}
+#body .head .long{
+    width: 800px;
+}
+#body .head .short{
+    width: 400px;
+}
+.herf{
+    float: right;
+    width: 400px;
+    height: 150px;
+    line-height: 150px;
+    margin-top: 350px;
+    font-size: 30px;
+    border-bottom: 10px solid #FFF;
+    transition: background 0.5s;
+}
+.herf:hover{
+    color: #000;
+    background: #FFF;
+    border-bottom: 10px solid Orange;
+    transition: background 0.5s;
+}
+
+
+#WF{
+    width: 100%;
+    height: 1000px;
+    background: #96FFD1;
+}
+#WF div{
+    float: left;
+    width: 300px;
+    height: 1000px;
+    line-height: 1000px;
+    font-size: 30px;
+    text-shadow: 0px 0px 5px #000;
+    transition: width 0.5s;
+    background-position: 20% 0%;
+}
+#WF div:hover{
+    width: 1000px;
+    transition: width 0.5s;
+}
+.gw{
+    background: #222;
+    
+}
+.lt{
+    background: #333;
+}
+.gs{
+    background: #444;
+}
+
+#bottom{
+    width: 100%;
+    height: 600px;
+    background: #95F3FF;
+}
+#bottom div{
+    float: right;
+    width: 400px;
+    height: 600px;
+    margin-right: 0px;
+    background: #333;
+}
+#bottom .tit{
+    width: 100%;
+    height: 300px;
+    line-height: 300px;
+    font-size: 36px;
+}
+#bottom .text{
+    width: 320px;
+    height: 300px;
+    margin-right: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+}
+
+#foot{
+    position: relative;
+    z-index: 1;
+    width: 1920px;
+    height: 370px;
+    margin: 100px auto 0px;
+    background: #333;
+}
+#foot div{
+    width: 1500px;
+    height: 370px;
+    margin: 50px auto 0px;
+}
+#foot ul{
+    float: left;
+    display: inline-block;
+    width: 140px;
+    margin-top: 50px;
+    padding: 30px;
+    border-right: 1px solid #BBB;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    color: #FFF;
+}   
+#foot li{
+    list-style: none;
+    margin-top: 30px;
+} 
+#foot .cell{
+    float: left;
+    width: auto;
+    height: 170px;
+    margin-left: 80px;
+    margin-top: 50px;
+    padding-top: 30px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+    color: #FFF;
+}  
+#foot p{
+    margin-bottom: 30px;
+}
+
+/* CSS Document */
