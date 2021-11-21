@@ -1,0 +1,20 @@
+.clr{ clear:both;}
+
+.page{padding:10px 0;margin-top:0px;margin-bottom:15px;clear:both;overflow:visible;text-align:center;position:relative}
+.page .pageNav{height:50px;overflow:hidden;padding-top:50px;margin:0 auto}
+.page a,.page span,.page i{border:1px solid #ccc;background:none repeat scroll 0 0 #FFF;padding:5px 10px;overflow:hidden;color:#cf4429;font-size:12px;font-weight:bold;border-right:none;-moz-box-shadow:3px 1px 3px #CCC;-webkit-box-shadow:3px 1px 3px #CCC;box-shadow:3px 1px 3px #CCC;display:block;float:left}
+.page a:hover{text-decoration:none;color:#FF6701}
+.page span{background:#e6e6e6;color:#808080;font-weight:bold}
+.page i{border:none;background:none;padding:0 3px}
+.page .i_left,.page .pg_next{border-right:#ccc solid 1px}
+.page .pg_next{position:relative;overflow:visible;width:60px;_height:24px;_line-height:24px;_padding:0px}
+.page .pg_next em{height:71px;width:170px;position:absolute;top:-52px;right:-110px}
+.page .pg-prev{color:#bbb;font-weight:normal;background:none repeat scroll 0 0 #FFF;width:60px;_height:24px;_line-height:24px;_padding:0px}
+.page .pg_n_normal{color:#bbb;font-weight:normal;background:none repeat scroll 0 0#fff;width:60px;_height:24px;_line-height:24px;_padding:0px}
+.content_01{padding-bottom:10px;padding-top:10px}
+.content_01 span{color:#f66b05;font-size:16px;padding-left:20px;font-weight:bold}
+.content_01 ul{padding-left:20px;font-size:14px;padding-top:5px}
+.content_01 ul li{line-height:25px}.content_01
+p{font-size:14px;padding-left:20px;color:#f66b05;padding-bottom:5px;padding-top:5px}
+.content_01
+a{color:#f66b05}

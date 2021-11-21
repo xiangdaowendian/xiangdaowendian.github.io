@@ -95,7 +95,6 @@
 </div>
 
 
-
 		<div class="bottom">
 			<div class="bottom_tp"><span>热门推荐:</span><a class="kanmore" href="/hot"><b class="txt">查看更多</b></a></div>
 		   <ul>
@@ -115,6 +114,7 @@
 		   </ul>
 		</div>
 	</div>
+
 
 <div class="link">
 <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="border:#e6e6e6 solid 1px;">
