@@ -1,0 +1,489 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	::-webkit-scrollbar {
+		width: 10px;
+		height: auto;
+	}
+	::-webkit-scrollbar-track {
+		background: rgba(0,0,0,0);
+	}
+	::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background: #FFF;
+	}
+	
+	body{
+		overflow-x: hidden;
+		font-family: "微软雅黑";
+	}
+	
+	div{
+		text-align: center;
+		color: #FFF;
+	}
+	
+	a{
+		text-decoration: none;
+		color: #FFF;
+	}
+	a:hover{
+		text-decoration: none;
+	}
+	
+	#header{
+		position: absolute;
+		z-index: 9999;
+		width: 100%;
+		height: 10px;
+		background: #333;
+		box-shadow: 0px 0px 100px 50px #000;
+	}
+	
+	#gav{
+		position: absolute;
+		z-index: 9999;
+		width: 800px;
+		height: 50px;
+		top: 30px;
+		left: 160px;
+	}
+	#gav div{
+		float: left;
+		width: 160px;
+		height: 50px;
+		line-height: 50px;
+		color: #FFF;
+		font-size: 18px;
+		text-align: center;
+		text-shadow: 0px 0px 3px #000;
+	}
+	#gav div:hover{
+		color: #000;
+		background: #FFF;
+		transition: background 0.3s;
+		border-bottom: 5px solid Orange;
+		text-shadow: 0px 0px 0px #000;
+		cursor: pointer;
+	}
+
+	#bg{
+		position: fixed;
+		z-index: 0;
+		width: 1920px;
+		height: 1080px;
+		background: #333;
+	}
+	
+	.wallerpaper{
+		position: absolute;
+		z-index: 1;
+		width: 1920px;
+		height: 1000px;
+		top: 0px;
+	}
+	
+	.part{
+		position: absolute;
+		z-index: 2;
+		width: 1920px;
+		height: 900px;
+		background: #222;
+		transform: skewY(-3deg);
+	}
+	
+	#switch{
+		position: absolute;
+		z-index: 3;
+		width: auto;
+		height: 50px;
+		left: 1320px;
+		top: 830px;
+	}
+	#switch div{
+		float: left;
+		width: 70px;
+		height: 44px;
+		line-height: 44px;
+		margin-left: 40px;
+		text-align: center;
+		color: #FFF;
+		font-family: Michroma;
+		font-size: 18px;
+		text-shadow: 0px 0px 3px #000;
+		transition: background 0.3s;
+	}
+	#switch div:hover{
+		color: #000;
+		background: #FFF;
+		transition: background 0.3s;
+		border-bottom: 5px solid Orange;
+		text-shadow: 0px 0px 0px #000;
+		cursor: pointer;
+	}
+	
+	#title{
+		position: absolute;
+		z-index: 9;
+		width: 1600px;
+		height: 450px;
+		top: 900px;
+		left: 160px;
+		background: #FF9B9D;
+	}
+	#title .float{
+		float: left;
+		height: 450px;
+	}
+	#title .left{
+		width: 800px;
+		background: #00460A;
+	}
+	#title .center{
+		width: 400px;
+		background: #423100;
+	}
+	#title .right{
+		width: 400px;
+		background: #002F4E;
+	}
+	#title .url{
+		float: right;
+		width: 400px;
+		height: 150px;
+		line-height: 150px;
+		margin-top: 300px;
+		font-size: 24px;
+		border-bottom: 10px solid #FFF;
+		transition: background 0.3s;
+	}
+	#title .url:hover{
+		background: #FFF;
+		transition: background 0.3s;
+		color: #000;
+		border-bottom: 10px solid Orange;
+	}
+	
+	#log{
+		position: absolute;
+		z-index: 5;
+		width: 1600px;
+		height: 300px;
+		top: 1420px;
+		left: 160px;
+	}
+	#log .title{
+		float: left;
+		width: 100%;
+		height: 100px;
+		line-height: 100px;
+		font-size: 24px;
+	}
+	#log ul{
+		float: left;
+		width: 400px;
+		height: 200px;
+	}
+	#log ul li{
+		list-style: none;
+		width: 320px;
+		height: 24px;
+		line-height: 24px;
+		margin: 0px auto;
+		font-size: 14px;
+	}
+	#log .date{
+		margin-top: 20px;
+		font-family: Michroma;
+		font-size: 24px;
+	}
+	#log .year{
+		font-family: Michroma;
+		font-size: 9px;
+		margin-top: -3px;
+		margin-bottom: 20px;
+	}
+	
+	#WF{
+		position: absolute;
+		z-index: 1;
+		width: 1600px;
+		height: 900px;
+		top: 1800px;
+		left: 160px;
+		background: #1E0045;
+	}
+	#WF div{
+		float: left;
+		width: 300px;
+		height: 900px;
+		line-height: 900px;
+		font-size: 24px;
+		text-shadow: 0px 0px 5px #000;
+		transition: width 0.5s;
+		background-position: 20% 0%;
+	}
+	#WF div:hover{
+		width: 1000px;
+		transition: width 0.5s;
+	}
+	.gw{
+		background: #005714;
+	}
+	.lt{
+		background: #513E00;
+	}
+	.gs{
+		background: #580001;
+	}
+	
+	#note{
+		position: absolute;
+		z-index: 9;
+		width: 1600px;
+		height: 600px;
+		top: 3000px;
+		left: 160px;
+		background: #004E06;
+	}
+	#note .note{
+		position: absolute;
+		z-index: 9;
+		width: 400px;
+		height: 600px;
+		top: -100px;
+		left: 1100px;
+		color: #FFF;
+		background: rgba(0,0,0,0.75);
+	}
+	#note .title{
+		width: 100%;
+		height: 300px;
+		line-height: 300px;
+		font-size: 24px;
+	}
+	#note .text{
+		width: 300px;
+		height: 300px;
+		margin: -10px auto;
+		text-align: left;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	
+	#href{
+		position: absolute;
+		z-index: 9;
+		width: auto;
+		height: auto;
+		left: 160px;
+		top: 3700px;
+	}
+	#href .float{
+		float: right;
+		width: 400px;
+		height: 200px;
+		margin-right: 100px;
+		background: #222;
+	}
+	#href .float .href{
+		float: right;
+		width: 200px;
+		height: 50px;
+		line-height: 50px;
+		margin-top: 150px;
+		border-bottom: 5px solid #FFF;
+		transition: background 0.3s;
+	}
+	#href .float .href:hover{
+		color: #000;
+		background: #FFF;
+		transition: background 0.3s;
+		border-bottom: 5px solid Orange;
+		cursor: pointer;
+	}
+
+	#foot{
+		position: absolute;
+		z-index: 9;
+		width: 1920px;
+		height: 250px;
+		font-size: 16px;
+		top: 4000px;
+		background: rgba(0,0,0,0.75);
+	}
+	#foot .logo{
+		float: left;
+		width: 150px;
+		height: 100px;
+		margin-top: 90px;
+		margin-left: 350px;
+		background: #BBB;
+	}
+	#foot .box{
+		float: left;
+		width: auto;
+		height: 100px;
+		margin-top: 50px;
+		padding: 25px 50px;
+		text-align: left;
+	}
+	#foot .box p{
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+	}
+	#foot ul{
+		float: left;
+		width: 200px;
+		height: 150px;
+		margin-top: 50px;
+	}
+	#foot ul li{
+		list-style: none;
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		border-left: 1px solid #FFF;
+	}
+	
+</style>
+</head>
+
+<body>
+	
+	<!--页头-->
+	<div id="header"></div>
+	
+	<!--背景底板-->
+	<div id="bg"></div>
+	
+	<!--导航-->
+	<div id="gav">
+		<div>我是标题</div>
+		<div>我是标题</div>
+		<div>我是标题</div>
+		<div>我是标题</div>
+		<div>我是标题</div>
+	</div>
+	
+	<!--桌面壁纸&选择框-->
+	<div id="switch">
+		<div onmouseover="Switch('')">01</div>
+		<div onmouseover="Switch('')">02</div>
+		<div onmouseover="Switch('')">03</div>
+		<div onmouseover="Switch('')">04</div>
+	</div>
+	<img src="" id="paper" class="wallerpaper">
+	
+	<!--头部背景-->
+	<div class="part" style="top: 950px;"></div>
+	<!--头部-->
+	<div id="title">
+		<div class="float left">
+			<div class="url">我是文字</div>
+		</div>
+		<div class="float center">
+			<div class="url">我是文字</div>
+		</div>
+		<div class="float right">
+			<div class="url">我是文字</div>
+		</div>
+	</div>
+	
+	<!--更新日志-->
+	<div id="log">
+		<div class="title">更新日志</div>
+		<ul style="margin-left: 199px; border-right: 1px solid #FFF;">
+			<li class="date">19</li>
+			<li class="year">2019.12</li>
+			<li>我是文字</li>
+		</ul>
+		<ul style="border-right: 1px solid #FFF;">
+			<li class="date">19</li>
+			<li class="year">2019.12</li>
+			<li>我是文字我是文字</li>
+			<li>我是文字我是文字我是文字</li>
+			<li>我是文字我是文字</li>
+			<li>我是文字</li>
+		</ul>
+		<ul>
+			<li class="date">19</li>
+			<li class="year">2020.3</li>
+			<li>我是文字我是文字我是文字</li>
+			<li>我是文字我是文字</li>
+		</ul>
+	</div>
+	
+	<!--WF部分-->
+	<div id="WF">
+		<a href="https://www.warframe.com/zh-hans/game#keyart" target="_blank"><div class="gs">我是文字</div></a>
+		<a href="https://forums.warframe.com/" target="_blank"><div class="lt">我是文字</div></a>
+        <a href="http://www.warframe.com/zh-hans" target="_blank"><div class="gw">我是文字</div></a>
+    </div>
+	
+	<!--后记背景-->
+	<div class="part" style="top: 2650px;"></div>
+	<!--后记-->
+	<div id="note">
+		<div class="note">
+			<div class="title">后记</div>
+			<div class="text">
+				（疫情期间，要不是闲着没事干我才懒得弄这个网页
+				<br>
+				我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字
+			</div>
+		</div>
+	</div>
+	
+	<!--链接-->
+	<div id="href">
+		<div class="float">
+			<div class="href">我是文字</div>
+		</div>
+		<div class="float">
+			<div class="href">我是文字</div>
+		</div>
+	</div>
+	
+	<!--页脚-->
+	<div id="foot">
+		<div class="logo"></div>
+		<div class="box">
+			<p>版权信息版权信息版权信息版权信息</p>
+			<p>版权信息版权信息版权信息版权信息</p>
+		</div>
+		<ul>
+			<li>我是鸣谢</li>
+			<li>我是鸣谢</li>
+			<li>我是鸣谢</li>
+		</ul>
+		<ul>
+			<li>我是鸣谢</li>
+			<li>我是鸣谢</li>
+		</ul>
+		<ul>
+			<li>我是鸣谢</li>
+			<li>我是鸣谢</li>
+			<li>我的鸣谢</li>
+		</ul>
+	</div>
+	
+	<script>
+		function Switch(src)
+		{
+			document.getElementById("paper").src=src;
+		}
+	</script>
+	
+</body>
+</html>
